@@ -1,0 +1,43 @@
+.ptitle {
+  font-size: 60px;
+  margin: 0px;
+}
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  color: white; /* Text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+}
+.custom-container {
+  position:relative;
+  height: auto;
+  display: flex;
+  width: 100vw;
+}
+
+.image-div {
+  flex: 1;
+  box-sizing: border-box;
+  max-size: 60%;
+}
+
+.text-div {
+  box-sizing: border-box;
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+
+.image-div img {
+  width: 100%;
+  height: auto;
+}
+
+.container, .image-div, .text-div {
+  max-width: 100% !important; /* Set this to your desired width */
+}
