@@ -1,5 +1,7 @@
 html *{
   font-family: Roboto !important;
+  box-sizing: border-box;
+  padding: 0px;
   margin: 0px;
 }
 
@@ -10,36 +12,57 @@ html *{
   left: 0;
   width: 100%;
   height: 100%;
-  color: white; /* Text color */
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-}
-.custom-container {
-  position:relative;
-  height: auto;
-  display: flex;
-  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
 }
 
-.image-div {
-  flex: 1;
-  box-sizing: border-box;
-  max-size: 60%;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
 }
 
-.text-div {
-  box-sizing: border-box;
-  flex: 0 0 40%;
-  max-width: 40%;
+li, a, button {
+  color: #24252A;
+  font-size: 16px;
+  text-decoration: none;
+}
+.links {
+  list-style: none;
 }
 
-.image-div img {
-  width: 100%;
-  height: auto;
+.links li {
+  display: inline-block;
+  padding: 0px 20px;
 }
 
-.container, .image-div, .text-div {
-  max-width: 100% !important; /* Set this to your desired width */
+.links li a {
+  transition: all 0.3s ease 0s;
 }
+
+nav-linls li a:hover {
+  color: #0088a9
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: #008888;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+
