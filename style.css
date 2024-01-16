@@ -42,7 +42,6 @@ header {
     padding: 5px 5%;
     width: 100vw;
     color: white;
-  /*  background-color: rgb(46, 139, 87, 0.5);*/
 }
 
 li, a, button {
@@ -88,3 +87,42 @@ button:hover {
 }
 
 
+.potato-storage {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url("img/Potato_Storage.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  font-family: Roboto;
+}
+
+.potato-storage div {
+  position: absolute;
+  background-color: rgb(18, 18, 18, 0.5);
+  height: 100vh;
+  width: 100vw;
+}
+
+.potato-storage h1, li , ul{
+  color: white;
+  z-index: 5;
+  font-family: Roboto;
+}
+
+.potato-storage li, ul{
+  font-size: 3vh;
+  margin: 10px 50px;
+}
+
+.content-overlay{
+  position:relative;
+  background-color: rgba(0, 0, 0, 0.25);
+}
