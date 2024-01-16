@@ -2,26 +2,38 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 	</head>
 	<body>
-		<header>
+		<header id="myHeader" style="z-index: 999; position: fixed;">
+			<script>
+				window.addEventListener('scroll', function() {
+					var header = document.getElementById('myHeader');
+					if (window.scrollY > 2) {
+						header.style.backgroundColor = 'rgba(46, 139, 87,' + Math.min((window.scrollY / 100), 0.5) +')';
+					} else {
+						header.style.backgroundColor = 'rgba(0, 0, 0, 0)';
+					}
+				});
+			</script>
 			<img id = "logoImg" src="img/more/logo_small.png" alt="Haggard Stores">
 			<nav>
-		  	<ul class="links">
-				  <li><a href="http://google.com"style="text-decoration:none;color:black;">Home</a></li>
-			  	<li><a href="http://google.com" style="text-decoration: none;color:black;">Agronomy</a></li>
-		  		<li><a href="http://google.com" style="text-decoration: none;color:black;">Research & Development</a></li>
-	  			<li><a href="http://google.com" style="text-decoration: none;color:black;">Seed</a></li>
-  			  <li><a href="http://google.com" style="text-decoration: none;color:black;">Concept Fertilisers</a></li>
-				  <li><a href="http://google.com" style="text-decoration: none;color:black;">Contact Us</a></li>
-        </ul>
+				<ul class="links">
+					<li><a href="http://google.com"style="text-decoration:none;color:white;">Home</a></li>
+					<li><a href="#adaptiveAgronomy" style="text-decoration: none;color:white;">Agronomy</a></li>
+					<li><a href="http://google.com" style="text-decoration: none;color:white;">Research & Development</a></li>
+					<li><a href="http://google.com" style="text-decoration: none;color:white;">Seed</a></li>
+					<li><a href="http://google.com" style="text-decoration: none;color:white;">Concept Fertilisers</a></li>
+					<li><a href="http://google.com" style="text-decoration: none;color:white;">Contact Us</a></li>
+				</ul>
 			</nav>
-			<a class="cta" href="[link to contact]i"><button>Contact</a><li>
+			<a class="cta" href="[link to contact]i"><button>Contact</a>
 		</header>
 
-		<div id="grassy" class="header">
-			<img id = "grassy" src="grassy.jpg" alt="Haggard Stores">
-			<div id="grassyText"><font>Specialist Agronomy Services for both Farmers & the Agri Industry</font></div>
+		<div id="grassy" class="responsive-title">
+			<img src="img/scroll.gif" style="z-index: 999; display: flex; align-items:center; bottom: 5px; position: absolute; height: 150px;">
+			<div></div>
+			<font>Specialist Agronomy Services for both Farmers & the Agri Industry</font>
 		</div>
 
 		<div id="home">
