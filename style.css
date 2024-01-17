@@ -244,7 +244,7 @@ button:hover {
 		color: white;
 		height: 100%;
 	}
-	
+
 	.r-d-text h1 {
 		font-size: 5vh;
 	}
@@ -330,6 +330,62 @@ button:hover {
 	header {
 		max-height: 70px;
 	}
+
+	.sprout-suppression {
+		display: grid;
+		grid-gap: 5vw;
+		padding: 5vh 8vw;
+		grid-template-rows: 1fr 1fr;
+		height: 55vh;
+		background-color: #181818;
+		color:white;
+
+		display: grid;
+		grid-gap: 5vw;
+		padding: 3vh 5vw;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		height: auto;
+		background-color: #181818;
+	
+	}
+
+	.sprout-suppression-text {
+		grid-row: 1/2;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		color: white;
+		height: 100%;
+	}
+
+	.sprout-suppression-text > * {
+		font-size: 3vh;
+	}
+	/*
+	.r-d-text ul li {
+	font-size: 100%;
+	}
+	 */
+	.sprout-suppression-text h1 {
+		font-size: 5vh;
+	}
+
+	.sprout-suppression-grid {
+		height: 100%;
+		width: 100%;
+		display: grid;
+		grid-gap: 15px;
+		grid-auto-rows: 1fr;
+		grid-template-columns: 1fr;
+	}
+
+	.item-1-ss {
+		background-image: url('img/Potato_Storage_1.jpeg'); /* Replace with your 16x9 image */
+		background-size:cover;
+	}
+}
 }
 
 
@@ -555,5 +611,49 @@ button:hover {
 	}
 
 
+	.sprout-suppression {
+		display: grid;
+		grid-gap: 5vw;
+		padding: 5vh 8vw;
+		grid-template-columns: 1fr 1fr;
+		height: 55vh;
+		background-color: #181818;
+		color:white;
+	}
 
+	.sprout-suppression-text {
+		grid-row: span 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		color: white;
+		height: 100%;
+	}
+
+	.sprout-suppression-text > * {
+		font-size: 3vh;
+	}
+	/*
+	.r-d-text ul li {
+	font-size: 100%;
+	}
+	 */
+	.sprout-suppression-text h1 {
+		font-size: 5vh;
+	}
+
+	.sprout-suppression-grid {
+		height: 100%;
+		width: 100%;
+		display: grid;
+		grid-gap: 15px;
+		grid-auto-rows: 1fr;
+		grid-template-columns: 1fr;
+	}
+
+	.item-1-ss {
+		background-image: url('img/Potato_Storage_1.jpeg'); /* Replace with your 16x9 image */
+		background-size:cover;
+	}
 }
