@@ -1,77 +1,94 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" type="text/css" href="index.css" />
-    
-</head>
-<body>
-<div id='test'>
-</div>
-<div class='nav'>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+		<header id="myHeader" style="z-index: 999; position: fixed;">
+			<script>
+				window.addEventListener('scroll', function() {
+									var header = document.getElementById('myHeader');
+									if (window.scrollY > 2) {
+														header.style.backgroundColor = 'rgba(46, 139, 87,' + Math.min((window.scrollY / 100), 0.5) +')';
+													} else {
+																		header.style.backgroundColor = 'rgba(0, 0, 0, 0)';
+																	}
+								});
+			</script>
+			<img id = "logoImg" src="img/more/logo_small.png" alt="Haggard Stores">
+			<nav>
+				<ul class="links">
+					<li><a href="http://google.com"style="text-decoration:none;color:white;">Home</a></li>
+					<li><a href="#adaptiveAgronomy" style="text-decoration: none;color:white;">Agronomy</a></li>
+					<li><a href="http://google.com" style="text-decoration: none;color:white;">Research & Development</a></li>
+					<li><a href="http://google.com" style="text-decoration: none;color:white;">Seed</a></li>
+					<li><a href="http://google.com" style="text-decoration: none;color:white;">Concept Fertilisers</a></li>
+					<li><a href="http://google.com" style="text-decoration: none;color:white;">Contact Us</a></li>
+				</ul>
+			</nav>
+			<a class="cta" href="[link to contact]i"><button>Contact</a>
+		</header>
 
-	<div class='logo'>
-	<img id = 'logoImg' src="logo.png" alt="Haggard Stores">
-	</div>
-	<div class='navComponent'>
-		<a href="http://google.com"style="text-decoration:none;color:black;">
-			<span>
-			Home
-			</span>
-	</div>
-	<div class='navComponent'>
-		<a href="http://google.com" style="text-decoration: none;color:black;">
-			<span>
-			Agronomy
-			</span>
-		</a>
-	</div>
-	<div class='navComponent'>
-		<a href="http://google.com" style="text-decoration: none;color:black;">
-			<span>
-			Reasearch & Development
-			</span>
-		</a>
-	</div>
-	<div class='navComponent'>
-		<a href="http://google.com" style="text-decoration: none;color:black;">
-			<span>
-			Seed
-			</span>
-		</a>
-	</div>
-		<div class='navComponent'>
-		<a href="http://google.com" style="text-decoration: none;color:black;">
-			<span>
-			Concept Fertilisers
-			</span>
-		</a>
-	</div>
-		<div class='navComponent'>
-		<a href="http://google.com" style="text-decoration: none;color:black;">
-			<span>
-			Contact Us
-			</span>
-		</a>
-	</div>
-</div>
-<div id='grassy'>
-<img id = 'grassy' src="grassy.jpg" alt="Haggard Stores">
-<div id='grassyText'><font>Specialist Agronomy Services for both Farmers & the Agri Industry</font></div>
-</div>
-<div id='home'>
-<h1>Home</h1>
-</div>
-<div id='adaptiveAgronomy'>
-	<h1>
-	Adaptive Agronomy
-	</h1>
-	<div id='adaptiveAgronomyText'>
-	<p>Agronomy is the science of soil management and the production of field crops.</br> In-field advice with an in-depth agronomic understanding is the cornerstone of our business. Our team of local, highly skilled IASIS, BASIS and FACTs qualified field agronomists work closely with their farmer customers to help them grow profitable crops. They use the results from various independent trials programs as well as research generated from the major chemical manufacturers to devise cost effective crop protection solutions tailored to meet local circumstances. Within our company we have 3 tiers of agronomy: Crop Protection, Seed Selection and Plant.</p>
-	</div>
-	<div id='adaptiveAgronomyImage1'>
-	<img id= 'Wheat' src="Wheat.jpg"
-	</div>
-</div>
+		<div id="grassy" class="responsive-title">
+			<img src="img/scroll.gif" style="z-index: 999; display: flex; align-items:center; bottom: 5px; position: absolute; height: 150px;">
+			<div></div>
+			<font>Specialist Agronomy Services for both Farmers & the Agri Industry</font>
+		</div>
 
-</body>
+
+
+		<div class="r-and-d">
+			<div class="r-d-text">
+				<h1>Research &amp Development</h1>
+				<p>In collaboration with the potato processing industry, plant breeders across Europe and growers we are conducting varietal field trials to identify new varieties to meet the environmental, economic and sustainable needs of growers and processors.</p>
+				<ul style="margin-left: 3vh; list-style: none;">
+					<li>Low Carbon Footprint</li>
+					<li>High Yielding</li>
+					<li>Disease Resistance</li>
+					<li>Growing Characteristics</li>
+					<li>Storage Characteristics</li>
+					<li>Processing Quality</li>
+				</ul>
+				<p>Annual Open Day where growers, breeders and processors meet and view field plots and discuss results</p>
+			</div>
+			<div class="r-d-grid">
+				<div class="item-1"></div>
+				<div class="item-2"></div>
+				<div class="item-3"></div>
+				<div class="item-4"></div>
+			</div>
+		</div>
+
+
+
+
+		<div id="potato-storage" class="potato-storage">
+			<div></div>
+			<div id="potato-storage-content" class="content-overlay">
+				<h1>Potato Storage</h1>
+				<ul>
+					<li>Servicing and calibrating the store equipment before use</li>
+					<li>Box stacking layout</li>
+					<li>Loading the store correctly</li>
+					<li>Operating the ventilation system and ensuring the airflow is optimised</li>
+					<li>Minimising air leakage, and so on</li>
+				</ul>
+			</div>
+		</div>
+
+
+		<div id="sprout-suppression">
+			<p>
+			Potato Sprout Supression
+			Protecting & Preserving your harvest.
+			Professional Fogging Service, using Synofog & Xedafog electrical foggers	with accredited operators
+			Store Inspection precedes all applications ensuring best performance
+			There are three sprout suppressant products available to us. 1,4Sight , Biox M, Argos.(Link each label to below)
+			https://www.pcs.agriculture.gov.ie/media/pesticides/content/products/labels/06256%20-%201,4%20SIGHT%20-%202023%20to%20date.pdf
+			https://www.pcs.agriculture.gov.ie/media/pesticides/content/products/labels/05431%20-%20Biox-M%20-%202016%20to%20date.pdf
+			https://www.pcs.agriculture.gov.ie/media/pesticides/content/products/labels/05838%20-%20Argos%20-%202021%20to%20date.pdf</p>
+			<img src="img/Potato_Storage_1.jpeg" style="max-width: 100vw; max-height: 100vh;">
+		</div>
+	</body>
 </html>
