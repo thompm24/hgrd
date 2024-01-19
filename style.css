@@ -3,11 +3,10 @@ html *{
 	box-sizing: border-box;
 	padding: 0px;
 	margin: 0px;
-	text-align: justify;
 }
 
 body ul li {
-	font-size: 3vh;
+	font-size: 1rem;
 	margin-left: 3vh;
 
 }
@@ -220,10 +219,79 @@ button:hover {
 	padding: 20px;
 }
 
+.article {
+	width: 600px;
+	padding: 50px 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.banner{
+	height: 40vh;
+	background-image: url('img/Potato_Trials_Main.jpeg');
+	background-size: cover;
+	display: grid;
+	place-items: center;
+}
+
+.article #r-and-d {
+	background-image: url('img/Potato_Trials_Main.jpeg');
+}
+
+.article ul li {
+	color: black;
+}
+
+.article > p {
+	text-align: justify;
+}
+
+.banner h1 {
+	font-family: Roboto;	
+}
+
+.article img {
+	width: 100%;
+}
+
+.cards {
+	display: flex;
+	gap: 30px;
+	justify-content: space-around;
+	margin: 50px 30px;
+}
+
+.cards div {
+	flex-basis: 100%;
+	padding: 10px;
+	border: solid;
+	border-width: thin;
+	border-color: green;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.cards div > a {
+	width: 100%;
+}
+
+.cards > div p {
+	margin: 10px 15px;
+	flex-grow: 1;
+}
+
+.cards button {
+	height: 40px;
+	padding: 10px;
+	width: 100%;
+}
+
+.cards button::hover {
+	background-color: green;
+}
 
 @media only screen and (min-width: 600px) {
-
-
 	.r-and-d {
 		display: grid;
 		grid-gap: 5vw;
@@ -385,7 +453,7 @@ button:hover {
 		background-image: url('img/Potato_Storage_1.jpeg'); /* Replace with your 16x9 image */
 		background-size:cover;
 	}
-}
+
 }
 
 
@@ -394,6 +462,10 @@ button:hover {
 		width: 90%;
 	}
 }
+
+
+
+
 
 @media only screen and (min-width: 1200px) {
 
@@ -655,5 +727,9 @@ button:hover {
 	.item-1-ss {
 		background-image: url('img/Potato_Storage_1.jpeg'); /* Replace with your 16x9 image */
 		background-size:cover;
+	}
+
+	.article {
+		width: 900px;
 	}
 }
