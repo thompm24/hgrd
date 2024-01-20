@@ -1,5 +1,24 @@
+:root {
+	--navy: #033240;
+	--blue: #25aae1;
+	--green: #799c3e;
+
+        --yellow: #fed363;
+        --yellow-desat: #ffe38b;
+	--yellow-highlight: #f9dc80;
+        --beige: #b1ad62;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=B612+Mono&family=Roboto+Mono&display=swap');
+
+html {
+	scroll-behavior: smooth;
+	background-color: var(--yellow-desat);
+	color: var(--navy);
+}
+
 html *{
-	font-family: Roboto !important;
+	font-family: 'Roboto', sans-serif;
 	box-sizing: border-box;
 	padding: 0px;
 	margin: 0px;
@@ -8,12 +27,11 @@ html *{
 body ul li {
 	font-size: 1rem;
 	margin-left: 3vh;
-
 }
 
 
 .responsive-title {
-	height: 100vh;
+	height: 90svh;
 	min-height: 500px;
 	background-image: url("grassy.jpg");
 	background-size: cover;
@@ -38,20 +56,34 @@ body ul li {
 	z-index: 1;
 }
 
-
 header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 5px 5%;
 	width: 100vw;
-	color: white;
 }
 
-li, a, button {
-	color: #24252A;
+header li, a {
 	font-size: 16px;
 	text-decoration: none;
+}
+
+header li {
+ 	color: white;
+}
+
+header > a {
+	color: var(--navy);
+}
+
+.links li > a {
+	color: white;
+	font-family: 'B612 Mono', monospace !important;
+}
+
+#tab > a{
+	font-family: 'B612 Mono', monospace !important;
 }
 
 .links {
@@ -72,8 +104,7 @@ li, a, button {
 }
 
 button {
-	padding: 9px 25px;
-	background-color: rgba(0, 136, 169, 1);
+	background-color: var(--green);
 	border: none;
 	border-radius: 50px
 	cursor: pointer;
@@ -81,7 +112,7 @@ button {
 }
 
 button:hover {
-	background-color: #008888;
+	background-color: var(--blue);
 }
 
 .logo {
@@ -96,7 +127,6 @@ button:hover {
 	padding: 5vh 8vw;
 	grid-template-columns: 1fr 1fr;
 	height: 80vh;
-	background-color: #181818;
 }
 
 .r-d-text {
@@ -172,8 +202,6 @@ button:hover {
 	justify-content: center;
 	align-items: center;
 
-	color: white;
-	font-family: Roboto;
 }
 
 .potato-storage div {
@@ -188,9 +216,7 @@ button:hover {
 }
 
 .potato-storage h1, li , ul{
-	color: white;
 	z-index: 5;
-	font-family: Roboto;
 }
 
 .potato-storage h1 {
@@ -226,20 +252,25 @@ button:hover {
 	margin-right: auto;
 }
 
+
 .banner{
 	height: 40vh;
 	background-image: url('img/Potato_Trials_Main.jpeg');
 	background-size: cover;
 	display: grid;
+	margin-left: auto;
+	margin-right: auto;
+
 	place-items: center;
+}
+
+.banner h1 {
+	color: white;
+	font-size: 3rem;
 }
 
 .article #r-and-d {
 	background-image: url('img/Potato_Trials_Main.jpeg');
-}
-
-.article ul li {
-	color: black;
 }
 
 .article > p {
@@ -247,12 +278,8 @@ button:hover {
 }
 
 .banner h1 {
-	font-family: Roboto;	
 }
 
-.article img {
-	width: 100%;
-}
 
 .cards {
 	display: flex;
@@ -266,7 +293,8 @@ button:hover {
 	padding: 10px;
 	border: solid;
 	border-width: thin;
-	border-color: green;
+	border-color: var(--green);
+	background-color: var(--yellow-highlight);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -285,10 +313,44 @@ button:hover {
 	height: 40px;
 	padding: 10px;
 	width: 100%;
+
 }
 
+
 .cards button::hover {
-	background-color: green;
+	background-color: var(--blue);
+}
+
+.columns {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1.4fr;
+	gap: 30px;
+	padding: 0px 30px;
+}
+
+.columns div {
+	flex-basis: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--yellow-highlight);
+	padding: 10px;
+	margin: 20px 0px;
+}
+.columns .application {
+	grid-column: span 1;
+}
+.columns .stats {
+	grid-column: span 1;
+}
+
+.columns div > p {
+	flex-grow: 1;
+	text-align: justify;
+}
+
+.columns div > h4 {
+	margin-top: 10px;
 }
 
 @media only screen and (min-width: 300px) {
@@ -299,7 +361,6 @@ button:hover {
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 1fr;
 		height: auto;
-		background-color: #181818;
 	}
 
 
@@ -336,19 +397,12 @@ button:hover {
 
 	.potato-storage div {
 		position: absolute;
-		background-color: rgba(18, 18, 18, 0.5);
 		height: 80%;
 		width: 100vw;
 		padding: 0px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-	}
-
-	.potato-storage h1, li , ul{
-		color: white;
-		z-index: 5;
-		font-family: Roboto;
 	}
 
 	.potato-storage h1 {
@@ -369,7 +423,6 @@ button:hover {
 
 	.content-overlay{
 		position:relative;
-		background-color: rgba(0, 0, 0, 1);
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -391,8 +444,6 @@ button:hover {
 		justify-content: center;
 		align-items: center;
 
-		color: white;
-		font-family: Roboto;
 	}
 
 	header {
@@ -414,8 +465,6 @@ button:hover {
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 1fr;
 		height: auto;
-		background-color: #181818;
-	
 	}
 
 	.sprout-suppression-text {
@@ -424,20 +473,14 @@ button:hover {
 		flex-direction: column;
 		justify-content: center;
 		text-align: center;
-		color: white;
 		height: 100%;
 	}
 
 	.sprout-suppression-text > * {
-		font-size: 3vh;
+		font-size: 1rem;
 	}
-	/*
-	.r-d-text ul li {
-	font-size: 100%;
-	}
-	 */
 	.sprout-suppression-text h1 {
-		font-size: 5vh;
+		font-size: 3rem;
 	}
 
 	.sprout-suppression-grid {
@@ -457,17 +500,9 @@ button:hover {
 }
 
 
-@media only screen and (min-width: 992px) {
-	.container {
-		width: 90%;
-	}
-}
 
 
-
-
-
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1050px) {
 
 	.responsive-title {
 		height: 100vh;
@@ -484,7 +519,6 @@ button:hover {
 
 	.responsive-title div {
 		position: absolute;
-		background-color: rgb(0, 04, 35, 0.5);
 		height: 100vh;
 		width: 100vw;
 
@@ -493,7 +527,6 @@ button:hover {
 	.responsive-title font {
 		font-size: 40px;
 		padding: 0 50px;
-		color: white;
 		z-index: 1;
 	}
 
@@ -504,43 +537,19 @@ button:hover {
 		align-items: center;
 		padding: 5px 5%;
 		width: 100vw;
-		color: white;
 	}
 
-	li, a, button {
-		color: #24252A;
-		font-size: 16px;
-		text-decoration: none;
-	}
 	.links {
 		list-style: none;
 	}
 
 	.links a:hover {
-		font-size: 20px;
+		font-size: 1.25rem;
 	}
 
 	.links li {
 		display: inline-block;
 		padding: 0px 20px;
-	}
-
-	.links li a {
-		transition: all 0.3s ease 0s;
-	}
-
-
-	button {
-		padding: 9px 25px;
-		background-color: rgba(0, 136, 169, 1);
-		border: none;
-		border-radius: 50px
-		cursor: pointer;
-		transition: all 0.3s ease 0s;
-	}
-
-	button:hover {
-		background-color: #008888;
 	}
 
 	.logo {
@@ -555,7 +564,6 @@ button:hover {
 		padding: 5vh 8vw;
 		grid-template-columns: 1fr 1fr;
 		height: 80vh;
-		background-color: #181818;
 	}
 
 	.r-d-text {
@@ -564,18 +572,12 @@ button:hover {
 		flex-direction: column;
 		justify-content: center;
 		text-align: center;
-		color: white;
 		height: 100%;
 	}
 
 	.r-d-text > * {
 		font-size: 3vh;
 	}
-	/*
-	.r-d-text ul li {
-	font-size: 100%;
-	}
-	 */
 	.r-d-text h1 {
 		font-size: 5vh;
 	}
@@ -635,13 +637,10 @@ button:hover {
 		justify-content: center;
 		align-items: center;
 
-		color: white;
-		font-family: Roboto;
 	}
 
 	.potato-storage div {
 		position: absolute;
-		background-color: rgba(18, 18, 18, 0.5);
 		height: 100vh;
 		width: 100vw;
 		padding: 20px;
@@ -651,9 +650,7 @@ button:hover {
 	}
 
 	.potato-storage h1, li , ul{
-		color: white;
 		z-index: 5;
-		font-family: Roboto;
 	}
 
 	.potato-storage h1 {
@@ -674,7 +671,6 @@ button:hover {
 
 	.content-overlay{
 		position:relative;
-		background-color: rgba(0, 0, 0, 1);
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -689,7 +685,6 @@ button:hover {
 		padding: 5vh 8vw;
 		grid-template-columns: 1fr 1fr;
 		height: 55vh;
-		background-color: #181818;
 		color:white;
 	}
 
@@ -699,7 +694,6 @@ button:hover {
 		flex-direction: column;
 		justify-content: center;
 		text-align: center;
-		color: white;
 		height: 100%;
 	}
 
@@ -732,4 +726,15 @@ button:hover {
 	.article {
 		width: 900px;
 	}
+
+
+	header button {
+		height: 30px;
+		width: 70px;
+		font-size: 20px;
+	}
+
+	.cta a {
+     		color: var(--blue);
+        }
 }

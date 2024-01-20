@@ -1,0 +1,5 @@
+Navy      3  50  78   #033240
+Blue     37 170 255   #25aae1
+Green   121 156  62   #799c3e
+Yellow  254 211  99   #fed363
+Beige   177 173  98   #b1ad62
