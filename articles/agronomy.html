@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+		<header id="myHeader" style="z-index: 999; position: fixed;">
+			<script>
+				window.addEventListener('scroll', function() {
+									var header = document.getElementById('myHeader');
+									if (window.scrollY > 2) {
+													header.style.backgroundColor = 'rgba(46, 139, 87,' + Math.min((window.scrollY / 100), 0.5) +')';
+													} else {
+													header.style.backgroundColor = 'rgba(0, 0, 0, 0)';
+													}
+								});
+			</script>
+			<img id = "logoImg" src="img/more/logo_small.png" alt="Haggard Stores">
+			<nav>
+				<ul class="links">
+					<li><a href="http://google.com"style="text-decoration:none;color:white;">Home</a></li>
+					<li><a href="#adaptiveAgronomy" style="text-decoration: none;color:white;">Agronomy</a></li>
+					<li><a href="http://google.com" style="text-decoration: none;color:white;">Research & Development</a></li>
+					<li><a href="http://google.com" style="text-decoration: none;color:white;">Seed</a></li>
+					<li><a href="http://google.com" style="text-decoration: none;color:white;">Concept Fertilisers</a></li>
+					<li><a href="http://google.com" style="text-decoration: none;color:white;">Contact Us</a></li>
+				</ul>
+			</nav>
+			<a class="cta" href="[link to contact]i"><button>Contact</a>
+		</header>
+		<div class="article">
+		<div class="banner" id="agrBan"><p>hello</p></div>
+		</div>
+	</body>

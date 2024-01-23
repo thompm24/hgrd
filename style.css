@@ -71,7 +71,7 @@ header {
 }
 
 header li, a {
-	font-size: 16px;
+	font-size: 0.95rem;
 	text-decoration: none;
 }
 
@@ -102,7 +102,7 @@ header > a {
 }
 
 .links a:hover {
-	font-size: 20px;
+	font-size: 1.15rem;
 }
 
 .links li {
@@ -532,7 +532,7 @@ button:hover {
 
 
 	.article {
-		
+
 	}
 }
 
@@ -720,7 +720,6 @@ button:hover {
 		padding: 5vh 8vw;
 		grid-template-columns: 1fr 1fr;
 		height: 55vh;
-		color:white;
 	}
 
 	.sprout-suppression-text {
@@ -728,7 +727,6 @@ button:hover {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		text-align: center;
 		height: 100%;
 	}
 
@@ -781,5 +779,5 @@ button:hover {
 	.responsive-title div {
 		height: 100vh;
 		height: 100svh;
-	
+
 }
