@@ -1,785 +1,405 @@
-:root {
-	--navy: #033240;
-	--blue: #25aae1;
-	--green: #799c3e;
-
-        --yellow: #fed363;
-        --yellow-desat: #ffe38b;
-	--yellow-highlight: #f9dc80;
-        --beige: #b1ad62;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=B612+Mono&family=Roboto+Mono&display=swap');
-
-html {
-	scroll-behavior: smooth;
-	background-color: var(--yellow-desat);
-	color: var(--navy);
-}
-
 html *{
-	box-sizing: border-box;
-	padding: 0px;
-	margin: 0px;
+  font-family: Roboto !important;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  text-align: justify;
 }
-
 
 body ul li {
-	font-size: 1rem;
-	margin-left: 3vh;
-}
-
-#home  *{
-	font-family: 'Roboto', sans-serif;
+  font-size: 3vh;
+  margin-left: 3vh;
+  
 }
 
 
 .responsive-title {
-	height: 90vh;
-	height: 90svh;
-	min-height: 500px;
-	background-image: url("grassy.jpg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+  height: 100vh;
+  min-height: 500px;
+  background-image: url("img/Agronomy.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
-	display:flex;
-	justify-content: center;
-	align-items: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .responsive-title div {
-	position: absolute;
-	background-color: rgb(0, 04, 35, 0.5);
-	height: 90vh;
-	height: 90svh;
-	width: 100vw;
+  position: absolute;
+  background-color: rgb(0, 04, 35, 0.5);
+  height: 100vh;
+  width: 100vw;
+
 }
 
 .responsive-title font {
-	font-size: 40px;
-	color: white;
-	z-index: 1;
+  font-size: 40px;
+  color: white;
+  z-index: 1;
 }
+
 
 header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 5px 5%;
-	width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5%;
+    width: 100vw;
+    color: white;
 }
 
-header li, a {
-	font-size: 16px;
-	text-decoration: none;
+li, a, button {
+  color: #24252A;
+  font-size: 16px;
+  text-decoration: none;
 }
-
-header li {
- 	color: white;
-}
-
-header > a {
-	color: var(--navy);
-}
-
-.links li > a {
-	color: white;
-	font-family: 'B612 Mono', monospace !important;
-}
-
-.links strong {
-	font-family: 'B612 Mono', monospace !important;
-
-}
-
-#tab > a{
-	font-family: 'B612 Mono', monospace !important;
-}
-
 .links {
-	list-style: none;
+  list-style: none;
 }
 
 .links a:hover {
-	font-size: 20px;
+  font-size: 20px;
 }
 
 .links li {
-	display: inline-block;
-	padding: 0px 20px;
+  display: inline-block;
+  padding: 0px 20px;
 }
 
 .links li a {
-	transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
+
 button {
-	background-color: var(--green);
-	border: none;
-	border-radius: 50px
-	cursor: pointer;
-	transition: all 0.3s ease 0s;
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
 }
 
 button:hover {
-	background-color: var(--blue);
+  background-color: #008888;
 }
 
 .logo {
-	position:absolute;
-	cursor: pointer;
-	left: 10px;
+  position:absolute;
+  cursor: pointer;
+  left: 10px;
 }
 
 .r-and-d {
-	display: grid;
-	grid-gap: 5vw;
-	padding: 5vh 8vw;
-	grid-template-columns: 1fr 1fr;
-	height: 80vh;
+  display: grid;
+  grid-gap: 5vw;
+  padding: 5vh 8vw;
+  grid-template-columns: 1fr 1fr;
+  height: 80vh;
+  background-color: #181818;
 }
 
 .r-d-text {
-	grid-row: span 1;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	color: var(--navy);
-	height: 100%;
+  grid-row: span 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  height: 100%;
 }
 
-.r-d-text * {
-	font-size: 1rem;
+.r-d-text > * {
+  font-size: 3vh;
 }
-
+/*
+.r-d-text ul li {
+  font-size: 100%;
+}
+*/
+.r-d-text h1 {
+  font-size: 5vh;
+}
 
 .r-d-grid {
-	height: 100%;
-	width: 100%;
-	display: grid;
-	grid-gap: 15px;
-	grid-auto-rows: 1fr 1fr;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-gap: 15px;
+  grid-auto-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .item-1, .item-2, .item-3, .item-4{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .item-1 {
-	grid-row: span 1;
-	grid-column: span 4;
-	background-image: url('img/Potato_Trials_2.jpeg');
+  grid-row: span 1;
+  grid-column: span 4;
+  background-image: url('img/Potato_Trials_2.jpeg'); /* Replace with your 16x9 image */
 }
 
 .item-2 {
-	grid-row: span 1;
-	grid-column: span 6;
-	background-image: url('img/Potato_Trials_3.jpeg');
+  grid-row: span 1;
+  grid-column: span 6;
+  background-image: url('img/Potato_Trials_3.jpeg');
 }
 
 .item-3 {
-	grid-row: span 1;
-	grid-column: span 5;
-	background-image: url(img/Potato_Trials_Main.jpeg)
+  grid-row: span 1;
+  grid-column: span 5;
+  background-image: url(img/Potato_Trials_Main.jpeg)
 }
 
 .item-4 {
-	grid-row: span 1;
-	grid-column: span 5;
-	background-image: url('img/Potato_Trials_1.jpeg');
+  grid-row: span 1;
+  grid-column: span 5;
+  background-image: url('img/Potato_Trials_1.jpeg');
 }
 
 
 .potato-storage {
-	height: 100vh;
-	min-height: 500px;
-	background-image: url("img/Potato_Storage.jpeg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+  height: 100vh;
+  min-height: 500px;
+  background-image: url("img/Potato_Storage.jpeg");  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
-	display:flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
+  color: white;
+  font-family: Roboto;
 }
 
 .potato-storage div {
-	position: absolute;
-	background-color: rgba(18, 18, 18, 0.5);
-	height: 100vh;
-	color: white;
-	width: 100vw;
-	padding: 20px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+  position: absolute;
+  background-color: rgba(18, 18, 18, 0.5);
+  height: 100vh;
+  width: 100vw;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .potato-storage h1, li , ul{
-	z-index: 5;
+  color: white;
+  z-index: 5;
+  font-family: Roboto;
 }
 
 .potato-storage h1 {
-	font-size: 4.5vh;
+  font-size: 4.5vh;
 }
 
 .potato-storage li, ul{
-	font-size: 3.5vh;
-	margin: 10px 50px;
+  font-size: 3.5vh;
+  margin: 10px 50px;
 }
 
 #potato-storage-content {
-	padding: 30px;
-	max-width: 60%;
+  right: 5%;
+  padding: 30px;
+  max-height: 70%;
+  max-width: 40%;
 }
 
 
 .content-overlay{
-	position:relative;
-	background-color: rgba(0, 0, 0, 1);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	padding: 20px;
-}
-
-.article {
-	width: 600px;
-	padding: 50px 0px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.article * {
-	font-family: 'Roboto', sans-serif;
-}
-
-.banner{
-	height: 40vh;
-	background-image: url('img/Potato_Trials_Main.jpeg');
-	background-size: cover;
-	display: grid;
-	margin-left: auto;
-	margin-right: auto;
-
-	place-items: center;
-	font-family: 'Roboto', sans-serif;
-}
-
-.banner h1 {
-	color: white;
-	font-size: 3rem;
-}
-
-.article #r-and-d {
-	background-image: url('img/Potato_Trials_Main.jpeg');
-}
-
-.article > p {
-	text-align: justify;
-}
-
-.banner h1 {
-}
-
-
-.cards {
-	display: flex;
-	gap: 30px;
-	justify-content: space-around;
-	margin: 50px 30px;
-}
-
-.cards div {
-	flex-basis: 100%;
-	padding: 10px;
-	border: solid;
-	border-width: thin;
-	border-color: var(--green);
-	background-color: var(--yellow-highlight);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-.cards div > a {
-	width: 100%;
-}
-
-.cards > div p {
-	margin: 10px 15px;
-	flex-grow: 1;
-}
-
-.cards button {
-	height: 40px;
-	padding: 10px;
-	width: 100%;
-
-}
-
-
-.cards button::hover {
-	background-color: var(--blue);
-}
-
-.columns {
-	display: grid;
-	grid-template-rows: 1fr;
-	grid-template-columns: 1fr 1.4fr;
-	gap: 30px;
-	padding: 0px 30px;
-}
-
-.columns div {
-	flex-basis: 100%;
-	display: flex;
-	flex-direction: column;
-	background-color: var(--yellow-highlight);
-	padding: 10px;
-	margin: 20px 0px;
-}
-.columns .application {
-	grid-column: span 1;
-}
-.columns .stats {
-	grid-column: span 1;
-}
-
-.columns div > p {
-	flex-grow: 1;
-	text-align: justify;
-}
-
-.columns div > h4 {
-	margin-top: 10px;
-}
-
-@media only screen and (max-width: 500px) {
-	.article {
-		width: 95vw;
-		padding: 10px 0px;
-	}
-	.article .columns {
-		padding: 10px;
-		gap: 10px;
-	}
-
-	.article .cards {
-		gap: 5px;
-		margin: 40px 10px;
-		flex-direction: column
-	}
-
-	.banner {
-		height: 25svh;
-
-	}
-}
-
-@media only screen and (max-width: 800px) {
-	.r-and-d {
-		display: grid;
-		grid-gap: 5vw;
-		padding: 5px;
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 2fr;
-		height: auto;
-	}
-
-
-	.r-d-text {
-		grid-column: span 1;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
-
-	.r-d-text h1 {
-		font-size: 5vh;
-	}
-
-	.r-d-grid {
-		grid-row: span 2;
-		height: 100%;
-		width: 100%;
-		display: grid;
-		grid-gap: 15px;
-		grid-auto-rows: 33vh 33vh 33vh;
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	}
-
-	.responsive-title font {
-		font-size: 30px;
-		padding: 0px 40px;
-		text-align: center;
-	}
-
-
-	.potato-storage div {
-		position: absolute;
-		height: 40svh;
-		width: 100vw;
-		padding: 20px;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
-
-	.potato-storage h1 {
-		font-size: 2rem;
-	}
-
-	.potato-storage li, ul{
-		font-size: 1rem;
-		margin: 10px 20px;
-	}
-
-	#potato-storage-content {
-		padding: 10px 10px;
-		max-width: 80%;
-		max-height: 350px;
-	}
-
-
-	.content-overlay{
-		position:relative;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		text-align: center;
-		padding: 20px;
-		height: 200rem;
-	}
-
-
-	.potato-storage {
-		min-height: 200px;
-		max-height: 40svh;
-		background-image: url("img/Potato_Storage.jpeg");
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-
-		display:flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-
-	}
-
-
-
-	header {
-		max-height: 70px;
-	}
-
-	.sprout-suppression {
-		display: grid;
-		grid-gap: 5vw;
-		padding: 5vh 8vw;
-		grid-template-rows: 1fr 1fr;
-		height: 55vh;
-		background-color: #181818;
-		color:white;
-
-		display: grid;
-		grid-gap: 5vw;
-		padding: 3vh 5vw;
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr;
-		height: auto;
-	}
-
-	.sprout-suppression-text {
-		grid-row: 1/2;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		text-align: center;
-		height: 100%;
-	}
-
-	.sprout-suppression-text > * {
-		font-size: 1rem;
-	}
-	.sprout-suppression-text h1 {
-		font-size: 3rem;
-	}
-
-	.sprout-suppression-grid {
-		height: 100%;
-		width: 100%;
-		display: grid;
-		grid-gap: 15px;
-		grid-auto-rows: 1fr;
-		grid-template-columns: 1fr;
-	}
-
-	.item-1-ss {
-		background-image: url('img/Potato_Storage_1.jpeg'); /* Replace with your 16x9 image */
-		background-size:cover;
-	}
-
-
-	.article {
-		
-	}
+  position:relative;
+  background-color: rgba(0, 0, 0, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
 }
 
 
 
 
-@media only screen and (min-width: 1050px) {
 
-	.responsive-title {
-		height: 100vh;
-		min-height: 500px;
-		background-image: url("grassy.jpg");
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
+.sprout-suppression {
+  display: grid;
+  grid-gap: 5vw;
+  padding: 5vh 8vw;
+  grid-template-columns: 1fr 1fr;
+  height: 55vh;
+  background-color: #181818;
+  color:white;
+}
 
-		display:flex;
-		justify-content: center;
-		align-items: center;
-	}
+.sprout-suppression-text {
+  grid-row: span 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  height: 100%;
+}
 
-	.responsive-title div {
-		position: absolute;
-		height: 100vh;
-		width: 100vw;
+.sprout-suppression-text > * {
+  font-size: 3vh;
+}
+/*
+.r-d-text ul li {
+  font-size: 100%;
+}
+*/
+.sprout-suppression-text h1 {
+  font-size: 5vh;
+}
 
-	}
+.sprout-suppression-grid {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-gap: 15px;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr;
+}
 
-	.responsive-title font {
-		font-size: 40px;
-		padding: 0 50px;
-		z-index: 1;
-	}
+.item-1-ss {
+  background-image: url('img/Potato_Storage_1.jpeg'); /* Replace with your 16x9 image */
+  background-size:cover;
+}
 
+.responsive-title-agronomy-page{
+  height: 100vh;
+  min-height: 500px;
+  background-image: url("grassy.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
-	header {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		padding: 5px 5%;
-		width: 100vw;
-	}
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
 
-	.links {
-		list-style: none;
-	}
+.responsive-title-agronomy-page div {
+  position: absolute;
+  background-color: rgb(0, 04, 35, 0.5);
+  height: 100vh;
+  width: 100vw;
 
-	.links a:hover {
-		font-size: 1.25rem;
-	}
+}
 
-	.links li {
-		display: inline-block;
-		padding: 0px 20px;
-	}
+.responsive-title-agronomy-page font {
+  font-size: 40px;
+  color: white;
+  z-index: 1;
+}
 
-	.logo {
-		position:absolute;
-		cursor: pointer;
-		left: 10px;
-	}
+.agronomy-tiers {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url("img/Potato_Trials_3.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
-	.r-and-d {
-		display: grid;
-		grid-gap: 5vw;
-		padding: 5vh 8vw;
-		grid-template-columns: 1fr 1fr;
-		height: 80vh;
-	}
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-	.r-d-text {
-		grid-row: span 1;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		height: 100%;
-	}
+  color: white;
+  font-family: Roboto;
+}
 
-	.r-d-text > * {
-		font-size: 3vh;
-	}
-	.r-d-text h1 {
-		font-size: 5vh;
-	}
+.agronomy-tiers div {
+  position: absolute;
+  background-color: rgba(18, 18, 18, 0.5);
+  height: 100vh;
+  width: 100vw;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-	.r-d-grid {
-		height: 100%;
-		width: 100%;
-		display: grid;
-		grid-gap: 15px;
-		grid-auto-rows: 1fr 1fr;
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	}
+.agronomy-tiers h1, li , ul{
+  color: white;
+  z-index: 5;
+  font-family: Roboto;
+}
 
-	.item-1, .item-2, .item-3, .item-4{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background-size: 100% 100%;
-		background-repeat: no-repeat;
-	}
+.agronomy-tiers h1 {
+  font-size: 4.5vh;
+}
 
-	.item-1 {
-		grid-row: span 1;
-		grid-column: span 4;
-		background-image: url('img/Potato_Trials_2.jpeg'); /* Replace with your 16x9 image */
-	}
+.agronomy-tiers li, ul,p{
+  font-size: 3vh;
+  margin: 10px 50px;
+}
 
-	.item-2 {
-		grid-row: span 1;
-		grid-column: span 6;
-		background-image: url('img/Potato_Trials_3.jpeg');
-	}
+.tier-div {
+  display: grid;
+  grid-gap: 5vw;
+  padding: 5vh 8vw;
+  grid-template-columns: 1fr 1fr;
+  height: 140vh;
+  background-color: #181818;
+  color:white;
+}
 
-	.item-3 {
-		grid-row: span 1;
-		grid-column: span 5;
-		background-image: url(img/Potato_Trials_Main.jpeg)
-	}
+.item-1-agronomy-tiers {
+  background-image: url('img/Potato_Trials_2.jpeg'); /* Replace with your 16x9 image */
+  background-size:cover;
+}
 
-	.item-4 {
-		grid-row: span 1;
-		grid-column: span 5;
-		background-image: url('img/Potato_Trials_1.jpeg');
-	}
+.precision-farming {
+  display: grid;
+  grid-gap: 5vw;
+  padding: 5vh 8vw;
+  grid-template-columns: 1fr 1fr;
+  height: 80vh;
+  background-color: #181818;
+}
 
+.precision-farming-text {
+  grid-row: span 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  height: 100%;
+}
 
-	.potato-storage {
-		min-height: 500px;
-		background-image: url("img/Potato_Storage.jpeg");
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-
-		display:flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-
-	}
-
-	.potato-storage div {
-		position: absolute;
-		min-height: 500px;
-		width: 100vw;
-		padding: 20px;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
-
-	.potato-storage h1, li , ul{
-		z-index: 5;
-	}
-
-	.potato-storage h1 {
-		font-size: 4.5vh;
-	}
-
-	.potato-storage li, ul{
-		font-size: 3.5vh;
-		margin: 10px 50px;
-	}
-
-	#potato-storage-content {
-		padding: 30px;
-		max-height: 70%;
-		max-width: 40%;
-	}
-
-
-	.content-overlay{
-		position:relative;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		text-align: center;
-		padding: 20px;
-	}
-
-
-	.sprout-suppression {
-		display: grid;
-		grid-gap: 5vw;
-		padding: 5vh 8vw;
-		grid-template-columns: 1fr 1fr;
-		height: 55vh;
-		color:white;
-	}
-
-	.sprout-suppression-text {
-		grid-row: span 1;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		text-align: center;
-		height: 100%;
-	}
-
-	.sprout-suppression-text > * {
-		font-size: 3vh;
-	}
-	/*
-	.r-d-text ul li {
-	font-size: 100%;
-	}
-	 */
-	.sprout-suppression-text h1 {
-		font-size: 5vh;
-	}
-
-	.sprout-suppression-grid {
-		height: 100%;
-		width: 100%;
-		display: grid;
-		grid-gap: 15px;
-		grid-auto-rows: 1fr;
-		grid-template-columns: 1fr;
-	}
-
-	.item-1-ss {
-		background-image: url('img/Potato_Storage_1.jpeg'); /* Replace with your 16x9 image */
-		background-size:cover;
-	}
-
-	.article {
-		width: 900px;
-	}
-
-
-	header button {
-		height: 30px;
-		width: 70px;
-		font-size: 20px;
-	}
-
-	.cta a {
-     		color: var(--blue);
-        }
-
-	.responsive-title {
-		height: 100vh;
-		height: 100svh;
-	}
-
-	.responsive-title div {
-		height: 100vh;
-		height: 100svh;
-	
+.precision-farming-text > * {
+  font-size: 3vh;
+}
+/*
+.r-d-text ul li {
+  font-size: 100%;
+}
+*/
+.precision-farming-text h1 {
+  font-size: 5vh;
+}
+.pf-grid {
+    height: 100%;
+  width: 100%;
+  display: grid;
+  grid-gap: 15px;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr;
+}
+.item-1-pf {
+  background-image: url('img/more/spray.jpg'); /* Replace with your 16x9 image */
+  background-size:cover;
 }
