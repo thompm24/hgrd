@@ -2,7 +2,6 @@
 	--navy: #033240;
 	--blue: #25aae1;
 	--green: #799c3e;
-
         --yellow: #fed363;
         --yellow-desat: #ffe38b;
 	--yellow-highlight: #f9dc80;
@@ -108,6 +107,7 @@ header > a {
 .links li {
 	display: inline-block;
 	padding: 0px 20px;
+	margin: auto;
 }
 
 .links li a {
@@ -265,7 +265,7 @@ button:hover {
 
 .banner{
 	height: 40vh;
-	background-image: url('img/Potato_Trials_Main.jpeg');
+	background-image: url('img/more/spray.jpg');
 	background-size: cover;
 	display: grid;
 	margin-left: auto;
@@ -364,6 +364,13 @@ button:hover {
 	margin-top: 10px;
 }
 
+.info {
+	padding: 20px 40px;
+	display: grid;
+	grid-template-rows: 3fr 1fr;
+	grid-template-columns: 1fr 1fr;
+}
+
 
 @media only screen and (max-width: 500px) {
 	.article {
@@ -388,10 +395,11 @@ button:hover {
 }
 
 .contact-us {
-	background-color: #FFFFFF;
+	background-color: var(--yellow-desat);
 	color: var(--navy);
 	display: grid;
-	grid-template-columns: 1.5fr 1fr
+	gap: 100px;
+	grid-template-columns: 1fr 1fr
 }
 
 #contact-left {
@@ -402,7 +410,8 @@ button:hover {
 #contact-right {
 	grid-column: span 1;
 	background-color: var(--navy);
-	color: var(--yellow-desat);
+	color: var(--yellow-highlight);
+	padding: 10px;
 	flex-basis: 40%;
 }
 
@@ -422,6 +431,7 @@ textarea {
 	outline: none;
 	padding: 10px;
 	box-sizing: border-box;
+	background: var(--yellow-highlight)
 }
 label {
 	margin-bottom: 6px;
@@ -441,12 +451,30 @@ label {
 	box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
 }
 
+.cta button{
+	background: var(--green);
+	width: 100px;
+	border: none;
+	outline: none;
+	color: var(--navy);
+	height: 35px;
+	border-radius: 30px;
+	margin-top: 20px;
+}
+
+.cta button::hover {
+	background: var(--yellow);
+	color: var(--navy);
+}
+
+
 input {
 	width: 100%;
 	border: none;
 	border-bottom: 1px solid #ccc;
 	outline: none;
 	padding-bottom: 5px;
+	background: var(--yellow-desat)
 }
 
 @media only screen and (max-width: 900px) {
@@ -590,16 +618,23 @@ input {
 		background-size:cover;
 	}
 
-
-	.article {
-
+	.contact-us {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
 	}
+
+
+
 }
 
 
 
 
 @media only screen and (min-width: 1050px) {
+
+	.contact-us {
+		grid-template-columns: 2fr 1fr
+	}
 
 	.responsive-title {
 		height: 100vh;
@@ -826,10 +861,6 @@ input {
 		width: 70px;
 		font-size: 20px;
 	}
-
-	.cta a {
-     		color: var(--blue);
-        }
 
 	.responsive-title {
 		height: 100vh;
