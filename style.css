@@ -364,6 +364,7 @@ button:hover {
 	margin-top: 10px;
 }
 
+
 @media only screen and (max-width: 500px) {
 	.article {
 		width: 95vw;
@@ -384,6 +385,68 @@ button:hover {
 		height: 25svh;
 
 	}
+}
+
+.contact-us {
+	background-color: #FFFFFF;
+	color: var(--navy);
+	display: grid;
+	grid-template-columns: 1.5fr 1fr
+}
+
+#contact-left {
+	grid-column: span 1;
+	padding: 50px 80px;
+}
+
+#contact-right {
+	grid-column: span 1;
+	background-color: var(--navy);
+	color: var(--yellow-desat);
+	flex-basis: 40%;
+}
+
+.input-row {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.input-row .input-group {
+	flex-basis: 45%;
+}
+
+textarea {
+	width: 100%;
+	border: 1px solid #ccc;
+	outline: none;
+	padding: 10px;
+	box-sizing: border-box;
+}
+label {
+	margin-bottom: 6px;
+	display: block;
+	color: var(--navy);
+}
+
+.contact-us button {
+	background: var(--navy);
+	width: 100px;
+	border: none;
+	outline: none;
+	color: var(--yellow-desat);
+	height: 35px;
+	border-radius: 30px;
+	margin-top: 20px;
+	box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+}
+
+input {
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	outline: none;
+	padding-bottom: 5px;
 }
 
 @media only screen and (max-width: 900px) {
