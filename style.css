@@ -489,14 +489,12 @@ button:hover {
 		padding: 5vh 8vw;
 		grid-template-rows: 1fr 1fr;
 		height: 55vh;
-		background-color: #181818;
-		color:white;
 
 		display: grid;
 		grid-gap: 5vw;
 		padding: 3vh 5vw;
 		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr;
+		grid-template-rows: 1fr 2fr;
 		height: auto;
 	}
 
@@ -505,7 +503,6 @@ button:hover {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		text-align: center;
 		height: 100%;
 	}
 
