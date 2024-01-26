@@ -872,3 +872,37 @@ input {
 		height: 100svh;
 
 }
+
+	.footer-content {
+	text-align:center;
+	}
+
+footer{
+	background-color:#E5CC7D;
+	padding:5%;
+	height:10%;
+
+}
+
+.footer-location {
+	background-color:#E5CC7D;
+	grid-row: span 1;
+	width:50%;
+	float:left;
+	padding:20px;
+}
+.footer-contact {
+        background-color:#E5CC7D;
+        grid-row: span 1;
+        width:50%;
+        float:left;
+        padding:20px;
+}
+
+.footer-copyright{
+	width:100%;
+	padding:3%;
+	background-color:blue;
+	text-align:center;
+	background-color:#E5CC7D;
+}
