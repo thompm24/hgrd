@@ -18,19 +18,39 @@
 			</script>
 			<img id = "logoImg" src="img/more/logo_small.png" alt="Haggard Stores">
 			<nav>
-				<ul class="links">
+				<ul class="sidebar">
+					<li onclick=hideSidebar()><img src="img/more/close.svg"></li>
 					<li><a href="index.html"style="text-decoration:none;color:white;">Home</a></li>
 					<li><a href="pages/agronomy.html" style="text-decoration: none;color:white;">Agronomy</a></li>
 					<li><a href="pages/r-and-d.html" style="text-decoration: none;color:white;">Research & Development</a></li>
 					<li><a href="pages/seed.html" style="text-decoration: none;color:white;">Seed</a></li>
 					<li><a href="pages/concept-fert.html" style="text-decoration: none;color:white;">Concept Fertilisers</a></li>
+					<li><a href="pages/contact-us.html" class="cta"><button>Contact</button></a></li>
+				</ul>
+
+				<ul class="links" id="">
+					<li class="hide-on-mobile"><a href="index.html"style="text-decoration:none;color:white;">Home</a></li>
+					<li class="hide-on-mobile"><a href="pages/agronomy.html" style="text-decoration: none;color:white;">Agronomy</a></li>
+					<li class="hide-on-mobile"><a href="pages/r-and-d.html" style="text-decoration: none;color:white;">Research &<br>Development</a></li>
+					<li class="hide-on-mobile"><a href="pages/seed.html" style="text-decoration: none;color:white;">Seed</a></li>
+					<li class="hide-on-mobile"><a href="pages/concept-fert.html" style="text-decoration: none;color:white;">Concept<br>Fertilisers</a></li>
 				</ul>
 			</nav>
-			<a href="pages/contact-us.html" class="cta"><button>Contact</button></a>
+			<a href="pages/contact-us.html" class="cta"><button class="hide-on-mobile">Contact</button></a>
+			<div onclick=showSidebar() class="show-on-mobile"><img src="img/more/menu.svg"></div>
 		</header>
+		<script>
+			function showSidebar() {
+				const sidebar = document.querySelector('.sidebar')
+				sidebar.style.display = 'flex'
+			}
+			function hideSidebar() {
+				const sidebar = document.querySelector('.sidebar')
+				sidebar.style.display = 'none'
+			}
+		</script>
 
 		<div id="grassy" class="responsive-title">
-			<img src="img/scroll.gif" style="z-index: 999; display: flex; align-items:center; bottom: 13vh; position: absolute; height: 150px;">
 			<div></div>
 			<font>Specialist Agronomy Services for both Farmers & the Agri Industry</font>
 		</div>
@@ -41,7 +61,7 @@
 			<div class="r-d-text">
 				<h1>Research &amp Development</h1>
 				<p>In collaboration with the potato processing industry, plant breeders across Europe and growers we are conducting varietal field trials to identify new varieties to meet the environmental, economic and sustainable needs of growers and processors.</p>
-				<ul style="margin-left: 3vh; list-style: none;">
+				<ul style="margin-left: 3vh;">
 					<li>Low Carbon Footprint</li>
 					<li>High Yielding</li>
 					<li>Disease Resistance</li>
@@ -122,7 +142,7 @@
 					<button type="submit">SEND</div>
 				</form>
 			<div id="contact-right">
-				<h1>Give us your data</h1>
+				<h1>Find us at:</h1>
 				<div class="info">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2369.46882592706!2d-6.422378922762353!3d53.56724897235421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48673fe2cd21ddad%3A0xa526c763ee526aec!2sHaggard%20Stores%20Ltd!5e0!3m2!1sen!2sie!4v1706182875565!5m2!1sen!2sie" style="border:0; grid-row: span 1; grid-column: span 2; width: 100%; height: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 					<div style="grid-column: span 1;">
