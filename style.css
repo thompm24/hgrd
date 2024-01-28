@@ -316,9 +316,10 @@ button:hover {
 
 .article {
 	width: 900px;
-	padding: 50px 0px;
+	padding: 50px 15px;
 	margin-left: auto;
 	margin-right: auto;
+	background-color:var(--yellow-highlight);
 }
 
 .article * {
@@ -437,7 +438,7 @@ button:hover {
 }
 
 .contact-us {
-	background-color: var(--yellow-desat);
+	background-color: #E5CC7D;
 	color: var(--navy);
 	display: grid;
 	gap: 100px;
@@ -473,7 +474,7 @@ button:hover {
 	outline: none;
 	padding: 10px;
 	box-sizing: border-box;
-	background: var(--yellow-highlight)
+	background: #d6be75;
 }
 label {
 	margin-bottom: 6px;
@@ -518,7 +519,7 @@ input {
 	border-bottom: 1px solid #ccc;
 	outline: none;
 	padding-bottom: 5px;
-	background: var(--yellow-desat)
+	background: #d6be75;
 }
 
 
