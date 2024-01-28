@@ -1,33 +1,55 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <link rel="stylesheet" type="text/css" href="../style.css" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body>
+<body id="home">
 <header id="myHeader" style="z-index: 999; position: fixed;">
-<script>
-window.addEventListener('scroll', function() {
-		var header = document.getElementById('myHeader');
-		if (window.scrollY > 2) {
-		header.style.backgroundColor = 'rgba(46, 139, 87,' + Math.min((window.scrollY / 100), 0.5) +')';
-				} else {
-				header.style.backgroundColor = 'rgba(0, 0, 0, 0)';
-				}
-				});
-		</script>
 		<img id = "logoImg" src="../img/more/logo_small.png" alt="Haggard Stores">
 		<nav>
-		<ul class="links">
-		<li id="tab"><a href="../index.html"style="text-decoration:none;color:white:">Home</a></li>
-		<li id="tab"><a href="agronomy.html" style="text-decoration: none;color:white:">Agronomy</a></li>
-		<li id="tab"><a href="r-and-d.html" style="text-decoration: none;color:white:">Research & Development</a></li>
-		<li id="tab"><a href="seed.html" style="text-decoration: none;color:white:">Seed</a></li>
-		<li id="tab"><a href="concept-fert.html" style="text-decoration: none;color:white:">Concept Fertilisers</a></li>
+		<ul class="sidebar">
+		<li onclick=hideSidebar()><img src="../img/more/close.svg"></li>
+		<li><a href="../index.html"style="text-decoration:none;color:white;">Home</a></li>
+		<li><a href="agronomy.html" style="text-decoration: none;color:white;">Agronomy</a></li>
+		<li><a href="r-and-d.html" style="text-decoration: none;color:white;">Research & Development</a></li>
+		<li><a href="seed.html" style="text-decoration: none;color:white;">Seed</a></li>
+		<li><a href="concept-fert.html" style="text-decoration: none;color:white;">Concept Fertilisers</a></li>
+		<li><a href="contact-us.html" class="cta"><button>Contact</button></a></li>
 		</ul>
-		</nav>
-		<a class="cta" href="[link to contact]"><button style="width: 10rem; height: 1.5rem;">Contact us</button></a>
+
+<ul class="links" id="">
+<li class="hide-on-mobile"><a href="../index.html"style="text-decoration:none;color:white;">Home</a></li>
+<li class="hide-on-mobile"><a href="agronomy.html" style="text-decoration: none;color:white;">Agronomy</a></li>
+<li class="hide-on-mobile"><a href="r-and-d.html" style="text-decoration: none;color:white;">Research &<br>Development</a></li>
+<li class="hide-on-mobile"><a href="seed.html" style="text-decoration: none;color:white;">Seed</a></li>
+<li class="hide-on-mobile"><a href="concept-fert.html" style="text-decoration: none;color:white;">Concept<br>Fertilisers</a></li>
+</ul>
+</nav>
+<a href="contact-us.html" class="cta"><button class="hide-on-mobile"><strong>Contact</strong></button></a>
+<div onclick=showSidebar() class="show-on-mobile"><img src="../img/more/menu.svg"></div>
 </header>
+<script>
+function showSidebar() {
+	const sidebar = document.querySelector('.sidebar')
+		sidebar.style.display = 'flex'
+}
+function hideSidebar() {
+	const sidebar = document.querySelector('.sidebar')
+		sidebar.style.display = 'none'
+}
+</script>
+
+
+
+
+
+
+
+
+
+
 <div class="banner" id="concept"><h1>Concept Fertilisers</h1></div>
 <div class="article">
 <h2>The future of fertilisers</h2>
@@ -142,5 +164,28 @@ Contains 360g/L potassium and 630g/L  sulphur. BladKali TS is already in solutio
 
 </ul>
 </div>
+
+
+
+		<div class="footer-container">
+			<div class="footer-location">
+			<p>
+			Haggard Stores Ltd.</br></br>
+			Newtown	</br>
+			Garristown</br> 
+			Dublin</br>
+			A42 Y996
+			</div>
+
+			<div class="footer-contact">
+			<p></br>Phone:</br> (01)835 5551</br>
+			</br>Email: </br>info@haggardstores.com</p>
+			</div>
+
+			<div class="footer-copyright">
+			<p>Copyright &copy; Haggardstores.ie</p>
+			</div>
+		</div>
+
 </body>
 </html>

@@ -2,6 +2,7 @@
 	--navy: #033240;
 	--blue: #25aae1;
 	--green: #799c3e;
+	--green-trans: rgba(121, 156, 62, 0.5);
         --yellow: #fed363;
         --yellow-desat: #ffe38b;
 	--yellow-highlight: #f9dc80;
@@ -70,12 +71,19 @@ header {
 	align-items: center;
 	padding: 5px 20px;
 	width: 100vw;
+	background-color: var(--green-trans);
 }
+
 
 header li, a {
 	font-size: 0.95rem;
 	text-decoration: none;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
 }
+
 
 header li {
  	color: white;
@@ -97,6 +105,11 @@ header > a {
 
 #tab > a{
 	font-family: 'B612 Mono', monospace !important;
+}
+
+.links {
+	display: flex;
+	justify-content: center;
 }
 
 .links {
@@ -130,9 +143,9 @@ header > a {
 	background-color: rgb(128, 128, 128, 0.5);
 	display: none;
 	flex-direction: column;
-	align-items: flex-start;
+	align-items: left;
 	justify-content: flex-start;
-	font-size: 1.4rem;
+	font-size: 2rem;
 	padding: 30px 20px;;
 	margin: 0px 0px;
 	list-style: none;
@@ -150,6 +163,18 @@ header > a {
 
 .sidebar a{
 	width: 100%;
+	display: flex;
+	text-align: left;
+	font-size: 1.4rem;
+}
+
+.sidebar img {
+	height: 2rem;
+	width: 2rem;
+	margin: 5px;
+	position: relative;
+	top: 5px;
+	left: -3px;
 }
 
 button {
@@ -266,11 +291,11 @@ button:hover {
 }
 
 .potato-storage h1 {
-	font-size: 4.5vh;
+	font-size: 3rem;
 }
 
 .potato-storage li, ul{
-	font-size: 3.5vh;
+	font-size: 2rem;
 	margin: 10px 50px;
 }
 
@@ -298,6 +323,10 @@ button:hover {
 
 .article * {
 	font-family: 'Roboto', sans-serif;
+}
+
+.article h1 {
+	margin-top: 20px;
 }
 
 .banner{
@@ -438,7 +467,7 @@ button:hover {
 	flex-basis: 45%;
 }
 
-textarea {
+#Message {
 	width: 100%;
 	border: 1px solid #ccc;
 	outline: none;
@@ -465,19 +494,21 @@ label {
 }
 
 .cta button{
-	background: var(--green);
+	background: var(--blue);
 	width: 100px;
 	border: none;
 	outline: none;
 	color: var(--navy);
-	height: 35px;
-	border-radius: 30px;
-	margin-top: 20px;
+	height: 45px;
+	font-size: 1.2rem;
+	border-radius: 50px;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
-.cta button::hover {
-	background: var(--yellow);
-	color: var(--navy);
+.cta button:hover {
+	background: var(--blue);
+	color: #FFFFFF;
 }
 
 
@@ -678,12 +709,7 @@ input {
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 1fr;
 	}
-
-
-
 }
-
-
 
 @media only screen and (min-width: 1050px) {
 	.article {
@@ -692,244 +718,6 @@ input {
 }
 
 
-/*
-
-	.contact-us {
-		grid-template-columns: 2fr 1fr
-	}
-
-	.responsive-title {
-		height: 100vh;
-		min-height: 500px;
-		background-image: url("grassy.jpg");
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-
-		display:flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.responsive-title div {
-		position: absolute;
-		height: 100vh;
-		width: 100vw;
-
-	}
-
-	.responsive-title font {
-		font-size: 40px;
-		padding: 0 50px;
-		z-index: 1;
-	}
-
-
-	header {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		padding: 5px 5px;
-		width: 100vw;
-	}
-
-	.links {
-		list-style: none;
-	}
-
-	.links a:hover {
-		font-size: 1.25rem;
-	}
-
-	.links li {
-		display: inline-block;
-		padding: 0px 20px;
-	}
-
-	.logo {
-		position:absolute;
-		cursor: pointer;
-		left: 10px;
-	}
-
-	.r-and-d {
-		display: grid;
-		grid-gap: 5vw;
-		padding: 5vh 8vw;
-		grid-template-columns: 1fr 1fr;
-		height: 80vh;
-	}
-
-	.r-d-text {
-		grid-row: span 1;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		height: 100%;
-	}
-
-	.r-d-text > * {
-		font-size: 1.4rem;
-	}
-	.r-d-text h1 {
-		font-size: 2rem;
-	}
-
-	.r-d-grid {
-		height: 100%;
-		width: 100%;
-		display: grid;
-		grid-gap: 15px;
-		grid-auto-rows: 1fr 1fr;
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	}
-
-	.item-1, .item-2, .item-3, .item-4{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background-size: 100% 100%;
-		background-repeat: no-repeat;
-	}
-
-	.item-1 {
-		grid-row: span 1;
-		grid-column: span 4;
-		background-image: url('img/Potato_Trials_2.jpeg');
-	}
-
-	.item-2 {
-		grid-row: span 1;
-		grid-column: span 6;
-		background-image: url('img/Potato_Trials_3.jpeg');
-	}
-
-	.item-3 {
-		grid-row: span 1;
-		grid-column: span 5;
-		background-image: url(img/Potato_Trials_Main.jpeg)
-	}
-
-	.item-4 {
-		grid-row: span 1;
-		grid-column: span 5;
-		background-image: url('img/Potato_Trials_1.jpeg');
-	}
-
-
-	.potato-storage {
-		min-height: 500px;
-		background-image: url("img/Potato_Storage.jpeg");
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-
-		display:flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-
-	}
-
-	.potato-storage div {
-		position: absolute;
-		min-height: 500px;
-		width: 100vw;
-		padding: 20px;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
-
-	.potato-storage h1, li , ul{
-		z-index: 5;
-	}
-
-	.potato-storage h1 {
-		font-size: 4.5vh;
-	}
-
-	.potato-storage li, ul{
-		font-size: 1.4rem;
-		margin: 10px 50px;
-	}
-
-	#potato-storage-content {
-		padding: 30px;
-		max-height: 70%;
-		max-width: 40%;
-	}
-
-
-	.content-overlay{
-		position:relative;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding: 20px;
-	}
-
-
-	.sprout-suppression {
-		display: grid;
-		grid-gap: 5vw;
-		padding: 5vh 8vw;
-		grid-template-columns: 1fr 1fr;
-		height: 55vh;
-	}
-
-	.sprout-suppression-text {
-		grid-row: span 1;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		height: 100%;
-	}
-
-	.sprout-suppression-text > * {
-		font-size: 3vh;
-	}
-
-	.sprout-suppression-text h1 {
-		font-size: 5vh;
-	}
-
-	.sprout-suppression-grid {
-		height: 100%;
-		width: 100%;
-		display: grid;
-		grid-gap: 15px;
-		grid-auto-rows: 1fr;
-		grid-template-columns: 1fr;
-	}
-
-	.item-1-ss {
-		background-image: url('img/Potato_Storage_1.jpeg');
-		background-size:cover;
-	}
-
-	.article {
-		width: 900px;
-	}
-
-
-	header button {
-		height: 30px;
-		width: 70px;
-		font-size: 20px;
-	}
-
-	.responsive-title {
-		height: 100vh;
-		height: 100svh;
-	}
-
-	.responsive-title div {
-		height: 100vh;
-		height: 100svh;
-	}
-}
-*/
 .footer-content {
 	text-align:center;
 }
