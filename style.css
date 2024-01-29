@@ -140,6 +140,7 @@ header > a {
 	z-index: 999;
 	box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
 	background-color: rgb(128, 128, 128, 0.5);
 	display: none;
 	flex-direction: column;
