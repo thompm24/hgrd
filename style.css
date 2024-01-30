@@ -731,24 +731,36 @@ footer{
 
 }
 
+.footer-container {
+	display: flex;
+	font-size: 0.75rem;
+}
+
+.footer-container div {
+	flex-basis: 100%;
+}
+
+.footer-container a {
+	font-size: 0.75rem;
+	text-decoration: underline;
+}
+
 .footer-location {
 	background-color:#E5CC7D;
 	grid-row: span 1;
 	width:50%;
-	float:left;
 	padding:20px;
 }
 .footer-contact {
         background-color:#E5CC7D;
         grid-row: span 1;
         width:50%;
-        float:left;
         padding:20px;
 }
 
 .footer-copyright{
 	width:100%;
-	padding:3%;
+	padding:5px;
 	background-color:blue;
 	text-align:center;
 	background-color:#E5CC7D;
