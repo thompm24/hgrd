@@ -336,6 +336,10 @@ button:hover {
 	margin-top: 20px;
 }
 
+.article ul {
+    margin: 5px 2rem;
+}
+
 .banner{
 	height: 40vh;
 	background-image: url('img/more/spray.jpg');
