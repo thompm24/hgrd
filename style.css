@@ -24,11 +24,6 @@ html *{
 }
 
 
-body ul li {
-	font-size: 1rem;
-	margin-left: 3vh;
-}
-
 #home  *{
 	font-family: 'Roboto', sans-serif;
 }
@@ -38,7 +33,7 @@ body ul li {
 	height: 100vh;
 	height: 100svh;
 	min-height: 500px;
-	background-image: url("Agronomy.jpeg");
+	background-image: url("img/Agronomy.jpeg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -287,7 +282,7 @@ button:hover {
 	justify-content: center;
 }
 
-.potato-storage h1, li , ul{
+.potato-storage h1 li ul{
 	z-index: 5;
 }
 
@@ -295,7 +290,7 @@ button:hover {
 	font-size: 3rem;
 }
 
-.potato-storage li, ul{
+.potato-storage li ul{
 	font-size: 2rem;
 	margin: 10px 50px;
 }
@@ -303,6 +298,16 @@ button:hover {
 #potato-storage-content {
 	padding: 30px;
 	max-width: 60%;
+}
+
+#potato-storage-content ul li {
+    font-size: 1.4rem;
+    list-style: none;
+}
+
+.sprout-suppression-text ul li a p {
+    font-size: 1.4rem !important;
+    list-style: none;
 }
 
 
@@ -620,7 +625,7 @@ input {
 		font-size: 2rem;
 	}
 
-	.potato-storage li, ul{
+	.potato-storage li  ul{
 		font-size: 1rem;
 		margin: 10px 20px;
 	}
@@ -686,8 +691,8 @@ input {
 		height: 100%;
 	}
 
-	.sprout-suppression-text > * {
-		font-size: 1rem;
+	.sprout-suppression-text * {
+		font-size: 1.3rem !important;
 	}
 	.sprout-suppression-text h1 {
 		font-size: 3rem;
