@@ -1,12 +1,13 @@
 :root {
 	--navy: #033240;
 	--blue: #25aae1;
-	--green: #799c3e;
+	--green: #08ae3f;
 	--green-trans: rgba(121, 156, 62, 0.5);
-        --yellow: #fed363;
-        --yellow-desat: #ffe38b;
+  --yellow: #fed363;
+  --yellow-desat: #fffbf1;
 	--yellow-highlight: #f9dc80;
-        --beige: #b1ad62;
+  --beige: #b1ad62;
+  --brown: #483729cc;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=B612+Mono&family=Roboto+Mono&display=swap');
@@ -14,7 +15,11 @@
 html {
 	scroll-behavior: smooth;
 	background-color: var(--yellow-desat);
-	color: var(--navy);
+	color: var(--brown);
+}
+
+html h1 {
+  color: var(--green);
 }
 
 html *{
@@ -204,7 +209,6 @@ button:hover {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	color: var(--navy);
 	height: 100%;
 }
 
@@ -325,7 +329,7 @@ button:hover {
 	padding: 50px 15px;
 	margin-left: auto;
 	margin-right: auto;
-	background-color:var(--yellow-highlight);
+	background-color:var(--yellow-desat);
 }
 
 .article * {
