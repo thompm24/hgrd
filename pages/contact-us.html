@@ -8,6 +8,16 @@
 </head>
 <body id="home">
 <header id="myHeader" style="z-index: 999; position: fixed;">
+			<script>
+				window.addEventListener('scroll', function() {
+									var header = document.getElementById('myHeader');
+									if (window.scrollY > 2) {
+														header.style.backgroundColor = 'rgba(46, 139, 87,' + Math.min((window.scrollY / 100), 0.5) +')';
+													} else {
+																		header.style.backgroundColor = 'rgba(0, 0, 0, 0)';
+																	}
+								});
+			</script>
 		<img id = "logoImg" src="../img/more/logo_small.png" alt="Haggard Stores">
 		<nav>
 		<ul class="sidebar">

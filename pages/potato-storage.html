@@ -6,6 +6,16 @@
 </head>
 <body id="home">
 <header id="myHeader" style="z-index: 999; position: fixed;">
+			<script>
+				window.addEventListener('scroll', function() {
+									var header = document.getElementById('myHeader');
+									if (window.scrollY > 2) {
+														header.style.backgroundColor = 'rgba(46, 139, 87,' + Math.min((window.scrollY / 100), 0.5) +')';
+													} else {
+																		header.style.backgroundColor = 'rgba(0, 0, 0, 0)';
+																	}
+								});
+			</script>
 		<img id = "logoImg" src="../img/more/logo_small.png" alt="Haggard Stores">
 		<nav>
 		<ul class="sidebar">
@@ -68,10 +78,19 @@ function hideSidebar() {
 			<p>Protecting &amp; Preserving your harvest.</br>
 Professional Fogging Service, using Synofog &amp; Xedafog electrical foggers with accredited operators.</br>
 Store Inspection precedes all applications ensuring best performance</br>
-There are three sprout suppressant products available to us.</br></br> <a style="color:#033240;" href="https://www.pcs.agriculture.gov.ie/media/pesticides/content/products/labels/06256%20-%201,4%20SIGHT%20-%202023%20to%20date.pdf">1,4Sight </a></br> 
-	<a style="color:#033240;" href="https://www.pcs.agriculture.gov.ie/media/pesticides/content/products/labels/05431%20-%20Biox-M%20-%202016%20to%20date.pdf">Biox M </a></br>
-	<a style="color:#033240;" href="https://www.pcs.agriculture.gov.ie/media/pesticides/content/products/labels/05838%20-%20Argos%20-%202021%20to%20date.pdf">Argos.</a></br></p>
+There are three sprout suppressant products available to us.</br></br> 
+	<div class="cards">
+		<div style="background-color:#b1ad62;">
+			<a style="color:#033240;" href="https://www.pcs.agriculture.gov.ie/media/pesticides/content/products/labels/06256%20-%201,4%20SIGHT%20-%202023%20to%20date.pdf" target="_blank" >1,4Sight </a>
+		</div>
+		<div style="background-color:#b1ad62;">
+			<a style="color:#033240;" href="https://www.pcs.agriculture.gov.ie/media/pesticides/content/products/labels/05431%20-%20Biox-M%20-%202016%20to%20date.pdf" target="_blank">Biox M </a>
+		</div>
+		<div style="background-color:#b1ad62;">
+			<a style="color:#033240;" href="https://www.pcs.agriculture.gov.ie/media/pesticides/content/products/labels/05838%20-%20Argos%20-%202021%20to%20date.pdf" target="_blank"></br>Argos</a></p>
+		</div>
 	
+	</div>
 <div style="display: flex;">
 <img src="../img/Potato_Storage_1.jpeg" style="width: 50%;">
 <img src="../img/Potato_Storage.jpeg" style="width: 50%;">
