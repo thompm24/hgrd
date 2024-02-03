@@ -2,7 +2,7 @@
 	--navy: #033240;
 	--blue: #25aae1;
 	--green: #3f935a;
-	--green-trans: #32af5b;
+	--green-trans: rgba(46, 139, 87, 0.5);
   --yellow: #fed363;
   --yellow-highlight: #fffbf1;
 	--yellow-desat: #fff7e0;
