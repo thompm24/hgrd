@@ -72,7 +72,7 @@ header {
 	align-items: center;
 	padding: 5px 20px;
 	width: 100vw;
-	background-color: var(--green-trans);
+	background-color: rgb(0, 0, 0, 0);
 }
 
 
@@ -200,9 +200,9 @@ button:hover {
 .r-and-d {
 	display: grid;
 	grid-gap: 5vw;
-	padding: 5vh 8vw;
-	grid-template-columns: 1fr 1fr;
-	height: 80vh;
+	padding: 5vh 4vw;
+	grid-template-columns: 1fr 1.2fr;
+	height: 60vh;
 }
 
 .r-d-text {
@@ -261,7 +261,7 @@ button:hover {
 
 
 .potato-storage {
-	height: 100vh;
+	height: 60vh;
 	min-height: 500px;
 	background-image: url("img/Potato_Storage.jpeg");
 	background-size: cover;
@@ -278,7 +278,7 @@ button:hover {
 .potato-storage div {
 	position: absolute;
 	background-color: rgba(18, 18, 18, 0.5);
-	height: 100vh;
+	height: 60vh;
 	color: white;
 	width: 100vw;
 	padding: 20px;
@@ -310,9 +310,14 @@ button:hover {
     list-style: none;
 }
 
+
 .sprout-suppression-text ul li a p {
     font-size: 1.4rem !important;
     list-style: none;
+}
+
+.sprout-suppression-text {
+    margin-right: 1rem;
 }
 
 
@@ -406,6 +411,8 @@ button:hover {
 	height: 40px;
 	padding: 10px;
 	width: 100%;
+  color: var(--navy);
+  font-weight: bold;
 
 }
 
@@ -452,7 +459,7 @@ button:hover {
 }
 
 .contact-us {
-	background-color: #E5CC7D;
+	background-color: var(--yellow-desat);
 	color: var(--navy);
 	display: grid;
 	gap: 100px;
@@ -461,15 +468,19 @@ button:hover {
 
 #contact-left {
 	grid-column: span 1;
-	padding: 50px 80px;
+	padding: 50px 40px;
 }
 
 #contact-right {
 	grid-column: span 1;
-	background-color: var(--navy);
-	color: var(--yellow-highlight);
+	background-color: var(--green);
+	color: var(--yellow-desat);
 	padding: 10px;
 	flex-basis: 40%;
+}
+
+#contact-right h1, h2, h3, h4, h5, h6, h7 {
+  color: var(--beige) !important;
 }
 
 .input-row {
@@ -488,12 +499,12 @@ button:hover {
 	outline: none;
 	padding: 10px;
 	box-sizing: border-box;
-	background: #d6be75;
+	background: var(--beige);
 }
 label {
 	margin-bottom: 6px;
 	display: block;
-	color: var(--navy);
+	color: var(--brown);
 }
 
 .contact-us button {
@@ -513,7 +524,7 @@ label {
 	width: 100px;
 	border: none;
 	outline: none;
-	color: var(--navy);
+	color: var(--brown);
 	height: 45px;
 	font-size: 1.2rem;
 	border-radius: 50px;
@@ -533,7 +544,7 @@ input {
 	border-bottom: 1px solid #ccc;
 	outline: none;
 	padding-bottom: 5px;
-	background: #d6be75;
+	background: var(--beige);
 }
 
 
@@ -679,16 +690,9 @@ input {
 	.sprout-suppression {
 		display: grid;
 		grid-gap: 5vw;
-		padding: 5vh 8vw;
+		margin: 5vh 8vw !important;
 		grid-template-rows: 1fr 1fr;
 		height: 55vh;
-
-		display: grid;
-		grid-gap: 5vw;
-		padding: 3vh 5vw;
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 2fr;
-		height: auto;
 	}
 
 	.sprout-suppression-text {
@@ -696,6 +700,7 @@ input {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+    padding-right: 10px;
 		height: 100%;
 	}
 
