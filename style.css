@@ -1,14 +1,15 @@
 :root {
 	--navy: #033240;
 	--blue: #25aae1;
-	--green: #08ae3f;
-	--green-trans: rgba(121, 156, 62, 0.5);
+	--green: #3f935a;
+	--green-trans: #32af5b;
   --yellow: #fed363;
-  --yellow-desat: #fffbf1;
-	--yellow-highlight: #f9dc80;
-  --beige: #b1ad62;
+  --yellow-highlight: #fffbf1;
+	--yellow-desat: #fff7e0;
+  --beige: #f7edd3;
   --brown: #483729cc;
 }
+
 
 @import url('https://fonts.googleapis.com/css2?family=B612+Mono&family=Roboto+Mono&display=swap');
 
@@ -18,7 +19,7 @@ html {
 	color: var(--brown);
 }
 
-html h1 {
+h1, h2, h3, h4, h5, h6, h7{
   color: var(--green);
 }
 
@@ -386,7 +387,7 @@ button:hover {
 	border: solid;
 	border-width: thin;
 	border-color: var(--green);
-	background-color: var(--yellow-highlight);
+	background-color: var(--beige);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -424,7 +425,7 @@ button:hover {
 	flex-basis: 100%;
 	display: flex;
 	flex-direction: column;
-	background-color: var(--yellow-highlight);
+	background-color: var(--beige);
 	padding: 10px;
 	margin: 20px 0px;
 }
@@ -437,7 +438,6 @@ button:hover {
 
 .columns div > p {
 	flex-grow: 1;
-	text-align: justify;
 }
 
 .columns div > h4 {
@@ -738,7 +738,7 @@ input {
 }
 
 footer{
-	background-color:#E5CC7D;
+	background-color: var(--beige);
 	padding:5%;
 	height:10%;
 
@@ -759,13 +759,13 @@ footer{
 }
 
 .footer-location {
-	background-color:#E5CC7D;
+	background-color: var(--beige);
 	grid-row: span 1;
 	width:50%;
 	padding:20px;
 }
 .footer-contact {
-        background-color:#E5CC7D;
+        background-color: var(--beige);
         grid-row: span 1;
         width:50%;
         padding:20px;
@@ -776,5 +776,5 @@ footer{
 	padding:5px;
 	background-color:blue;
 	text-align:center;
-	background-color:#E5CC7D;
+	background-color: var(--beige);
 }
