@@ -277,6 +277,7 @@ button:hover {
     margin: 1rem;
 }
 
+
 .seed {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -401,6 +402,25 @@ button:hover {
 .cards button::hover {
 	background-color: var(--blue);
 }
+
+#sprout-buttons {
+  justify-content: space-around;
+  margin: 50px 0;
+  }
+
+
+
+#sprout-buttons {
+  justify-content: space-around;
+  margin: 50px 0;
+  }
+
+.sprout {
+  display: flex;
+  flex-direction: horizontal;
+}
+
+
 
 .columns {
 	display: grid;
@@ -576,7 +596,22 @@ input {
 	.contact-us * {
 		padding: 0px;
 	}
+
+  #sprout-buttons {
+    justify-content: space-between
+  }
+
+#sprout-buttons button {
+  font-size: 0.8rem !important;
+  }
+
+  .sprout {
+    display: flex;
+     flex-direction: column;
+  }
+
 }
+
 
 .show-on-mobile {
 	display: none !important;
