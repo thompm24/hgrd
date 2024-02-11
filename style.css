@@ -27,6 +27,7 @@ html *{
 	box-sizing: border-box;
 	padding: 0px;
 	margin: 0px;
+  scroll-margin-top: 80px;
 }
 
 
@@ -281,6 +282,7 @@ button:hover {
 .seed {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 20px;
 }
 
 .seed * {
@@ -292,6 +294,12 @@ button:hover {
 	background: var(--beige);
 	padding: 20px;
 	margin: 20px;
+  box-shadow: 0 5px 10px 0 rgba(100, 100, 100, 0.5);
+  transition: transform 0.3s;
+}
+
+.seed >div:hover {
+  transform: translateY(-10px);
 }
 
 .seed > div > * {
@@ -414,6 +422,10 @@ button:hover {
   justify-content: space-around;
   margin: 50px 0;
   }
+
+#sprout-buttons button {
+  border-radius: 5px;
+}
 
 .sprout {
   display: flex;
@@ -550,9 +562,28 @@ input {
 	background: var(--beige);
 }
 
+.read-more {
+  margin: 10px auto;
+  background: var(--green);
+  color: var(--beige);
+}
+
+.readmore > button {
+  color: var(--beige);
+}
+
+.readmode:hover {
+  background: var(--blue);
+  color: white;
+}
+
+.readmore > button:hover {
+  color: var(--navy);
+}
 
 
 @media only screen and (max-width: 500px) {
+
 	.r-and-d {
 		grid-template-rows: auto auto;
 		margin-bottom: 30px;
