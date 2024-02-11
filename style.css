@@ -46,7 +46,6 @@ html *{
 	background-repeat: no-repeat;
 
 	padding: 0px 60px;
-
 	display:flex;
 	justify-content: center;
 	align-items: center;
@@ -203,7 +202,7 @@ button:hover {
 	grid-gap: 5vw;
 	padding: 5vh 4vw;
 	grid-template-columns: 1fr 1.2fr;
-	height: 100vh;
+	height: 60vh;
 }
 
 .r-d-text {
@@ -282,7 +281,6 @@ button:hover {
 .seed {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-  margin-bottom: 20px;
 }
 
 .seed * {
@@ -319,7 +317,8 @@ button:hover {
 
 .article {
 	width: 900px;
-	padding: 50px 15px;
+	padding:  0px 15px;
+  padding-bottom: 20px;
 	margin-left: auto;
 	margin-right: auto;
 	background-color:var(--yellow-desat);
@@ -338,13 +337,13 @@ button:hover {
 }
 
 .banner{
-	height: 40vh;
+	height: 25vh;
 	background-image: url('img/more/spray.jpg');
 	background-size: cover;
+  overflow: hidden;
 	display: grid;
 	margin-left: auto;
 	margin-right: auto;
-
 	place-items: center;
 	font-family: 'Roboto', sans-serif;
 }
@@ -563,28 +562,19 @@ input {
 	background: var(--beige);
 }
 
-.read-more {
-  margin: 10px auto;
-  background: var(--green);
-  color: var(--beige);
-  padding: 7px;
+.read-more button {
+  padding: 10px 20px;
+  margin: 20px auto;
   border-radius: 12px 4px 12px 4px;
-  font-size:1rem;
-}
-
-.readmore > button {
-  color: var(--beige);
-}
-
-.readmode:hover {
-  background: var(--blue);
-  color: white;
-}
-
-.readmore > button:hover {
   color: var(--navy);
 }
 
+/* Hover state */
+.read-more button:hover {
+    background-color: var(--blue) !important; /* Changing background color */
+    transform: translateY(-5px) !important; /* Moving the button up */
+    color: var(--navy);
+}
 
 @media only screen and (max-width: 500px) {
 
@@ -596,7 +586,7 @@ input {
 
 	.article {
 		width: 95vw;
-		padding: 10px 0px;
+		padding-bottom: 10px;
 	}
 	.article .columns {
 		padding: 10px;
@@ -610,8 +600,8 @@ input {
 	}
 
 	.banner {
-		height: 25svh;
-
+		height: 20svh;
+    ooverflow: hidden;
 	}
 
 	.sidebar{
