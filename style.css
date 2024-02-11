@@ -201,6 +201,7 @@ button:hover {
 	display: grid;
 	grid-gap: 5vw;
 	padding: 5vh 4vw;
+  margin-bottom: 20px;
 	grid-template-columns: 1fr 1.2fr;
 	height: 60vh;
 }
@@ -281,6 +282,7 @@ button:hover {
 .seed {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 5px;
 }
 
 .seed * {
@@ -297,7 +299,7 @@ button:hover {
 }
 
 .seed >div:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
 }
 
 .seed > div > * {
@@ -572,7 +574,7 @@ input {
 /* Hover state */
 .read-more button:hover {
     background-color: var(--blue) !important; /* Changing background color */
-    transform: translateY(-5px) !important; /* Moving the button up */
+    transform: translateY(-3px) !important; /* Moving the button up */
     color: var(--navy);
 }
 
