@@ -203,7 +203,7 @@ button:hover {
 	grid-gap: 5vw;
 	padding: 5vh 4vw;
 	grid-template-columns: 1fr 1.2fr;
-	height: 80vh;
+	height: 100vh;
 }
 
 .r-d-text {
@@ -492,6 +492,7 @@ button:hover {
 	color: var(--yellow-desat);
 	padding: 10px;
 	flex-basis: 40%;
+	border-radius: 10px 30px 10px 30px;
 }
 
 #contact-right h1, #contact-right h2, #contact-right h3, #contact-right h4, #contact-right h5 {
@@ -566,6 +567,9 @@ input {
   margin: 10px auto;
   background: var(--green);
   color: var(--beige);
+  padding: 7px;
+  border-radius: 12px 4px 12px 4px;
+  font-size:1rem;
 }
 
 .readmore > button {
