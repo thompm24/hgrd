@@ -349,14 +349,14 @@ button:hover {
 }
 
 .banner{
-	height: 25vh;
-	background-image: url('img/more/spray.jpg');
+	height: 200px;
+	background-image: url('img/banner_desktop.jpeg');
 	background-size: cover;
-  overflow: hidden;
-	display: grid;
-	margin-left: auto;
-	margin-right: auto;
-	place-items: center;
+  width: 100%;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -589,6 +589,10 @@ input {
     color: var(--navy);
 }
 
+.show-on-mobile {
+	display: none !important;
+}
+
 @media only screen and (max-width: 550px) {
    .read-more {
      width: 100%;
@@ -606,6 +610,16 @@ input {
     grid-auto-rows: 15vh 15vh;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   }
+
+   .banner {
+     height: 200px;
+     background-image: url(img/banner_mobile.JPG);
+   } 
+
+   .banner h1 {
+     font-size: 1.3rem;
+     width: auto;
+   }
 
   .r-d-grid * {
     max-height: 25vh;
@@ -626,10 +640,6 @@ input {
 		flex-direction: column
 	}
 
-	.banner {
-		height: 20svh;
-    ooverflow: hidden;
-	}
 
 	.sidebar{
 		width: 100%;
@@ -665,23 +675,23 @@ input {
 }
 
 
-.show-on-mobile {
-	display: none !important;
+@media only screen and (max-width: 1000px) {
+
+	.show-on-mobile {
+		display: inline-block !important;
+	}
+
+	.hide-on-mobile {
+		display: none !important;
+	}
+	
 }
 
 @media only screen and (min-width: 1078px) {
 	.article {
 		width: 95%;
 	}
-	.hide-on-mobile {
-		display: none !important;
-	}
-
-	.show-on-mobile {
-		display: inline-block !important;
-	}
-
-	.r-and-d {
+.r-and-d {
 		display: grid;
 		grid-gap: 5vw;
 		padding: 5px;
