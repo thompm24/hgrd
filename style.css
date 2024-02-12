@@ -278,14 +278,16 @@ button:hover {
 	height: 40vh;
 	position: relative;
 }
-
+/*
 .sprout-suppression-text ul li a p {
     font-size: 1.4rem !important;
     list-style: none;
 }
-
+*/
 .sprout-suppression-text {
-    margin: 1rem;
+    margin: 1rem 0;
+    font-size: 1.4rem !important;
+    list-style: none;
 }
 
 
