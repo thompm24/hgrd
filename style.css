@@ -278,18 +278,37 @@ button:hover {
 	height: 40vh;
 	position: relative;
 }
-/*
-.sprout-suppression-text ul li a p {
-    font-size: 1.4rem !important;
-    list-style: none;
-}
-*/
-.sprout-suppression-text {
-    margin: 1rem 0;
-    font-size: 1.4rem !important;
-    list-style: none;
+
+.sprout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 50vh;
 }
 
+.sprout img {
+  width: 350px;
+  max-height: 50vh;
+  padding: 40px;
+}
+
+.sprout > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sprout-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 10px;
+}
+
+.sprout-buttons button {
+  border-radius: 12px 4px 12px 4px;
+  width: 120px;
+  height: 30px;
+}
 
 .seed {
 	display: grid;
@@ -424,26 +443,6 @@ button:hover {
 	background-color: var(--blue);
 }
 
-#sprout-buttons {
-  justify-content: space-around;
-  margin: 50px 0;
-  }
-
-
-
-#sprout-buttons {
-  justify-content: space-around;
-  margin: 50px 0;
-  }
-
-#sprout-buttons button {
-  border-radius: 5px;
-}
-
-.sprout {
-  display: flex;
-  flex-direction: horizontal;
-}
 
 
 
@@ -661,18 +660,6 @@ input {
 		padding: 0px;
 	}
 
-  #sprout-buttons {
-    justify-content: space-between
-  }
-
-#sprout-buttons button {
-  font-size: 0.8rem !important;
-  }
-
-  .sprout {
-    display: flex;
-     flex-direction: column;
-  }
 
 .contact-us {
 	background-color: var(--yellow-desat);
@@ -778,39 +765,6 @@ input {
 		max-height: 70px;
 	}
 
-	.sprout-suppression {
-		display: grid;
-		grid-gap: 5vw;
-		margin: 5vh 8vw !important;
-		grid-template-rows: 1fr 1fr;
-		height: 55vh;
-	}
-
-	.sprout-suppression-text {
-		grid-row: 1/2;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-    padding-right: 10px;
-		height: 100%;
-	}
-
-	.sprout-suppression-text * {
-		font-size: 1.3rem !important;
-	}
-	.sprout-suppression-text h1 {
-		font-size: 3rem;
-	}
-
-	.sprout-suppression-grid {
-		height: 100%;
-		width: 100%;
-		display: grid;
-		grid-gap: 15px;
-		grid-auto-rows: 1fr;
-		grid-template-columns: 1fr;
-		margin: 5px;
-	}
 
 	.item-1-ss {
 		background-image: url('img/Potato_Storage_1.jpeg'); /* Replace with your 16x9 image */
