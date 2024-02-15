@@ -255,7 +255,7 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: justify;
 }
 
 .agronomy p {
@@ -282,8 +282,11 @@ button:hover {
 	flex-direction: column;
 	justify-content: center;
   align-items: center;
-	height: 100%;
+	height: 70vh;
   margin: 40px;
+	background:var(--beige);
+	padding:10px;
+	box-shadow: 0 5px 10px 0 rgba(100, 100, 100, 0.5);
 }
 
 .r-d-text * {
@@ -356,7 +359,7 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  height: 50vh;
   margin: 50px 0;
 }
 
@@ -368,10 +371,13 @@ button:hover {
 }
 
 .sprout-text {
-  height: 100%;
-  padding: 60px;
+  height: 64vh;
+  padding: 50px;
   flex-basis: 65%;
   position: relative;
+  background: var(--beige);
+	box-shadow: 0 5px 10px 0 rgba(100, 100, 100, 0.5);
+	margin:30px;
 }
 
 .sprout-text ul {
@@ -384,6 +390,7 @@ button:hover {
 
 #img1 {
   background-image: url("img/Potato_Storage_1.jpeg");
+  margin: 30px;
 }
 
 #img2 {
@@ -942,4 +949,10 @@ footer{
 	padding:5px;
 	background-color: var(--beige);
 	text-align:center;
+}
+#Agronomy-short-homepg{
+	height:62vh;
+	background:var(--beige);
+	padding:10px;
+	box-shadow: 0 5px 10px 0 rgba(100, 100, 100, 0.5);
 }
