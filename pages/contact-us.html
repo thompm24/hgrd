@@ -8,6 +8,7 @@
 </head>
 <body id="home">
 <header id="myHeader" style="z-index: 999; position: fixed;">
+
 			<script>
 				window.addEventListener('scroll', function() {
 									var header = document.getElementById('myHeader');
@@ -22,36 +23,42 @@
 		<nav>
 		<ul class="sidebar">
 		<li onclick=hideSidebar()><img src="../img/more/close.svg"></li>
-		<li><a href="../index.html"style="text-decoration:none;color:white;">Home</a></li>
-		<li><a href="agronomy.html" style="text-decoration: none;color:white;">Agronomy</a></li>
-		<li><a href="potato-storage.html" style="text-decoration: none;color:white;">Potato Storage</a></li>
-		<li><a href="r-and-d.html" style="text-decoration: none;color:white;">Research &amp Development</a></li>
-		<li><a href="seed.html" style="text-decoration: none;color:white;">Seed</a></li>
-		<li><a href="concept-fert.html" style="text-decoration: none;color:white;">Concept Fertilisers</a></li>
-		<li><a href="contact-us.html" class="cta"><button>Contact</button></a></li>
+		<li onclick=hideSidebar()><a href="../index.html"style="text-decoration:none;color:white;">Home</a></li>
+		<li onclick=hideSidebar()><a href="../index.html#agronomy-index" style="text-decoration: none;color:white;">Agronomy</a></li>
+		<li onclick=hideSidebar()><a href="../index.html#potatostorage-index" style="text-decoration: none;color:white;">Potato Storage</a></li>
+		<li onclick=hideSidebar()><a href="../index.html#rd-index" style="text-decoration: none;color:white;">Research &amp Development</a></li>
+		<li onclick=hideSidebar()><a href="../index.html#seed-index" style="text-decoration: none;color:white;">Seed</a></li>
+		<li onclick=hideSidebar()><a href="../index.html#fert-index" style="text-decoration: none;color:white;">Concept Fertilisers</a></li>
+		<li onclick=hideSidebar()><a href="../index.html#sustain-index" style="text-decoration: none;color:white;">Sustainability</a></li>
+		<li onclick=hideSidebar()><a href="contact-us.html" class="cta"><button>Contact</button></a></li>
 		</ul>
 
 <ul class="links" id="">
 <li class="hide-on-mobile"><a href="../index.html"style="text-decoration:none;color:white;">Home</a></li>
-<li class="hide-on-mobile"><a href="agronomy.html" style="text-decoration: none;color:white;">Agronomy</a></li>
-<li class="hide-on-mobile"><a href="potato-storage.html" style="text-decoration: none;color:white;">Potato Storage</a></li>
-<li class="hide-on-mobile"><a href="r-and-d.html" style="text-decoration: none;color:white;">Research &<br>Development</a></li>
-<li class="hide-on-mobile"><a href="seed.html" style="text-decoration: none;color:white;">Seed</a></li>
-<li class="hide-on-mobile"><a href="concept-fert.html" style="text-decoration: none;color:white;">Concept<br>Fertilisers</a></li>
+<li class="hide-on-mobile"><a href="../index.html#agronomy-index" style="text-decoration: none;color:white;">Agronomy</a></li>
+		<li class="hide-on-mobile"><a href="../index.html#potatostorage-index" style="text-decoration: none;color:white;">Potato Storage</a></li>
+<li class="hide-on-mobile"><a href="../index.html#rd-index" style="text-decoration: none;color:white;">Research &<br>Development</a></li>
+<li class="hide-on-mobile"><a href="../index.html#seed-index" style="text-decoration: none;color:white;">Seed</a></li>
+<li class="hide-on-mobile"><a href="../index.html#fert-index" style="text-decoration: none;color:white;">Concept<br>Fertilisers</a></li>
+<li class="hide-on-mobile"><a href="../index.html#sustain-index" style="text-decoration: none;color:white;">Sustainability</a></li>
 </ul>
 </nav>
 <a href="contact-us.html" class="cta"><button class="hide-on-mobile"><strong>Contact</strong></button></a>
 <div onclick=showSidebar() class="show-on-mobile"><img src="../img/more/menu.svg"></div>
+
+
 </header>
 <script>
-function showSidebar() {
-	const sidebar = document.querySelector('.sidebar')
-		sidebar.style.display = 'flex'
-}
-function hideSidebar() {
-	const sidebar = document.querySelector('.sidebar')
-		sidebar.style.display = 'none'
-}
+
+			function showSidebar() {
+							const sidebar = document.querySelector('.sidebar')
+							sidebar.classList.toggle('slide') 
+						}
+			function hideSidebar() {
+							const sidebar = document.querySelector('.sidebar')
+							sidebar.classList.toggle('slide') 
+						}
+		
 </script>
 
 

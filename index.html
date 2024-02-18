@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+    <link rel='icon' type='image/png' href='img/more/fav.png'/> 
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 	</head>
@@ -20,22 +21,24 @@
 			<nav>
 				<ul class="sidebar">
 					<li onclick=hideSidebar()><img src="img/more/close.svg"></li>
-					<li><a href="index.html"style="text-decoration:none;color:white;">Home</a></li>
-					<li><a href="pages/agronomy.html" style="text-decoration: none;color:white;">Agronomy</a></li>
-					<li><a href="#potatostorage-index" style="text-decoration: none;color:white;">Potato Storage</a></li>
-					<li><a href="#rd-index" style="text-decoration: none;color:white;">Research &amp Development</a></li>
-					<li><a href="#seed-index" style="text-decoration: none;color:white;">Seed</a></li>
-					<li><a href="pages/concept-fert.html" style="text-decoration: none;color:white;">Concept Fertilisers</a></li>
+					<li onclick=hideSidebar()><a href="index.html"style="text-decoration:none;color:white;">Home</a></li>
+					<li onclick=hideSidebar()><a href="#agronomy-index" style="text-decoration: none;color:white;">Agronomy</a></li>
+					<li onclick=hideSidebar()><a href="#potatostorage-index" style="text-decoration: none;color:white;">Potato Storage</a></li>
+					<li onclick=hideSidebar()><a href="#rd-index" style="text-decoration: none;color:white;">Research &amp Development</a></li>
+					<li onclick=hideSidebar()><a href="#seed-index" style="text-decoration: none;color:white;">Seed</a></li>
+					<li onclick=hideSidebar()><a href="#fert-index" style="text-decoration: none;color:white;">Concept Fertilisers</a></li>
+					<li onclick=hideSidebar()><a href="#sustain-index" style="text-decoration: none;color:white;">Sustainability</a></li>
 					<li><a href="pages/contact-us.html" class="cta"><button>Contact</button></a></li>
 				</ul>
 
 				<ul class="links" id="desktopnav">
 					<li class="hide-on-mobile"><a href="index.html"style="text-decoration:none;color:white;">Home</a></li>
-					<li class="hide-on-mobile"><a href="pages/agronomy.html" style="text-decoration: none;color:white;">Agronomy</a></li>
+					<li class="hide-on-mobile"><a href="#agronomy-index" style="text-decoration: none;color:white;">Agronomy</a></li>
 					<li class="hide-on-mobile"><a href="#potatostorage-index" style="text-decoration: none;color:white;">Potato Storage</a></li>
 					<li class="hide-on-mobile"><a href="#rd-index" style="text-decoration: none;color:white;">Research &<br>Development</a></li>
 					<li class="hide-on-mobile"><a href="#seed-index" style="text-decoration: none;color:white;">Seed</a></li>
-					<li class="hide-on-mobile"><a href="pages/concept-fert.html" style="text-decoration: none;color:white;">Concept<br>Fertilisers</a></li>
+					<li class="hide-on-mobile"><a href="#fert-index" style="text-decoration: none;color:white;">Concept<br>Fertilisers</a></li>
+					<li class="hide-on-mobile"><a href="#sustain-index" style="text-decoration: none;color:white;">Sustainability</a></li>
 				</ul>
 			</nav>
 			<a href="pages/contact-us.html" class="cta"><button class="hide-on-mobile">Contact</button></a>
@@ -44,11 +47,11 @@
 		<script>
 			function showSidebar() {
 							const sidebar = document.querySelector('.sidebar')
-							sidebar.style.display = 'flex'
+							sidebar.classList.toggle('slide') 
 						}
 			function hideSidebar() {
 							const sidebar = document.querySelector('.sidebar')
-							sidebar.style.display = 'none'
+							sidebar.classList.toggle('slide') 
 						}
 		</script>
 
@@ -58,114 +61,55 @@
 		</div>
 
 
-    <div class="agronomy">
-      <h1>Our Dedication</h1>
-      <p>The agronomy team at HS are industry professionals of the highest calibre and are constantly undergoing professional development and training to ensure that they are providing the best advice for your business.
-Adaptive management has the potential to rapidly accelerate improvements in nutrient management through the documentation of the most efficient management practices by farmers working with extension educators, consultants, scientists and environmental groups/<p>
-    </div>
+<div class="agronomy-home">
+<div class="agronomy-home-img hide-on-mobile"></div>
+<div class="article" id="agronomy-index">
+<h1>Our Dedication</h1>
+<p>The agronomy team at HS are industry professionals of the highest calibre and are constantly undergoing professional development and training to ensure that they are providing the best advice for your business.<br>Adaptive management has the potential to rapidly accelerate improvements in nutrient management through the documentation of the most efficient management practices by farmers working with extension educators, consultants, scientists and environmental groups</p>
 
-
-   <div class="lorem">
-     <div>
-       <div class="cols" id="lorem-cols">
-     <div class="lorem-image"></div>
-         <div id="Agronomy-short-homepg">
-     <h1>Agronomy Maybe!!?</h1>
-           <p>
-           'Cause I'm beginnin' to feel like a Rap God, Rap God
-All my people from the front to the back nod, back nod
-Now, who thinks their arms are long enough to slap box, slap box?
-Let me show you maintainin' this shit ain't that hard, that hard
-Everybody want the key and the secret to rap immortality like Ι have got
-           Well, to be truthful the blueprint's
-Simply rage and youthful exuberance
-Everybody loves to root for a nuisance
-Hit the Earth like an asteroid
-Did nothing but shoot for the Moon since (pew!)
-MCs get taken to school with this music
-'Cause I use it as a vehicle to "Bus the rhyme"
-Now I lead a new school full of students
-So you'll be Thor and I'll be Odin
-You rodent, I'm omnipotent
-Let off, then I'm reloadin'
-Immediately with these bombs I'm totin'
-And I should not be woken
-I'm the walkin' dead, but I'm just a talkin' head, a zombie floatin'
-But I got your mom deep-throatin'
-           </p>
-         </div>
-         <div>
-         <h1 style="color: var(--yellow-desat);">lorem</h1>
-           <p>
-Uh, summa-lumma, dooma-lumma, you assumin' I'm a human
-What I gotta do to get it through to you I'm superhuman?
-Innovative and I'm made of rubber so that anything
-You say is ricochetin' off of me, and it'll glue to you and
-I'm devastating, more than ever demonstrating
-How to give a motherfuckin' audience a feeling like it's levitating
-Never fading, and I know the haters are forever waiting
-For the day that they can say I fell off, they'll be celebrating
-'Cause I know the way to get 'em motivated
-I make elevating music, you make elevator music
-"Oh, he's too mainstream"
-Well, that's what they do when they get jealous, they confuse it
-"It's not hip-hop, it's pop, " 'cause I found a hella way to fuse it
-With rock, shock rap with Doc
-Throw on "Lose Yourself" and make 'em lose it
-           </p>
-         </div>
-       </div>
-
-     </div>
-   </div>
-
-
-		<div class="r-and-d" id="rd-index">
-			<div class="r-d-text">
-      <div>
-				<h1 style="font-size: 1.8rem;">Research  &amp  Development</h1>
-				<p>In collaboration with the potato processing industry, plant breeders across Europe and growers we are conducting varietal field trials to identify new varieties to meet the environmental, economic and sustainable needs of growers and processors.</p>
-				<ul style="margin-left: 3vh;">
-					<li>Low Carbon Footprint</li>
-					<li>High Yielding</li>
-					<li>Disease Resistance</li>
-					<li>Growing Characteristics</li>
-					<li>Storage Characteristics</li>
-					<li>Processing Quality</li>
-				</ul>
-        <a id = "r-d-button" class = "read-more"href="pages/r-and-d.html" style = "margin-top: 0; color: var(--navy); text-size: 1.4rem;"><button>Read more about research &amp development</button></a>
-			</div>
-      </div>
-      <div>
-			<div class="r-d-grid">
-				<div class="item-1"></div>
-				<div class="item-2"></div>
-				<div class="item-3"></div>
-				<div class="item-4"></div>
-			</div>
-				<p style="margin-top: -10px; font-size: 0.9rem;"><br>Annual Open Day where growers, breeders and processors meet and view field plots and discuss results</p>
-      </div>
+	<div class="cards">
+		<div><h4>Adaptive Agronomy</h4>
+			<p>Expert agronomic advice from certified local agronomists.</p>
+			<a href="pages/agronomy.html#adaptive"><button>Read More</button></a>
 		</div>
-    <div style="display: flex; justify-content: center;">
-    </div>
-
-
-		<div class="potato-storage" id="potatostorage-index">
-			<div style="background-color: var(--green-trans); position: absolute; width: 100%; height: 100%; top: 0; left: 0;"></div>
-			<div style="position: absolute; z-index: 2; display: flex; justify-content: center; align-items: center; flex-direction: column; height: 100%;width: 100%; padding: 1rem">
-				<h1 style="color: var(--yellow-desat);">Potato Storage</h1>
-				<ul style="color: var(--yellow-desat); list-style: none;">
-					<p style="font-size: 1.2rem; text-align: center;">Servicing and calibrating the store equipment before use
-					<br>Box stacking layout
-					<br>Loading the store correctly
-					<br>Operating the ventilation system and ensuring the airflow is optimised
-					<br>Minimising air leakage</p>
-				</ul>
-			</div>
+		<div><h4>Three Tiers</h4>
+			<p>Receive expert advice and stay knowledgeable on crop protection, seed seleciton and plant nutrition</p>
+			<a href="pages/agronomy.html#tiers"><button>Read More</button></a>
 		</div>
 
-      <div class="sprout">  
-			  <div class="sprout-img" id="img1"></div>
+		<div><h4>Precision Farming</h4>
+			<p>Optimaly applying fertilisers for maximum efficiency</p>
+			<a href="pages/agronomy.html#precision"><button>Read More</button></a>
+		</div>
+	</div>
+</div>
+<div class="agronomy-home-img show-on-mobile"></div>
+</div>
+
+
+      <div class="sprout"id="potato-storage">  
+        <div class="sprout-text" id="potato-storage-txt">
+          <h1 id="potatostorage-index" >Potato Storage Management</h1>
+					<ul style="list-style-type: disc !important; padding-left: 1.4rem;">
+						<li>Storage disease control</li>
+						<li>Box stacking layout</li>
+						<li>Loading the store correctly</li>
+						<li>Operating the ventilation system and ensuring the airflow is optimised</li>
+						<li>Minimised air leakage</li>
+					</ul>
+			  <div class="sprout-img show-on-mobile" style="margin-left:auto; margin-right: auto;" id="potato-storage-img"></div>
+
+        <a class = "read-more"href="pages/potato-storage.html" id="sprout-read-more"><button style="margin-top: 0px; margin-bottom: 40px; display: block; margin-left: auto; margin-right: auto; font-size: 1.4rem;">Read more about storage and sprout suppression</button></a>
+</div>
+			  <div class="sprout-img hide-on-mobile" style="" id="potato-storage-img"></div>
+
+
+</div>
+
+
+
+      <div class="sprout" >  
+			  <div class="sprout-img hide-on-mobile" id="img1"></div>
         <div class="sprout-text">
           <h1>Sprout Suppression</h1>
 					<ul>
@@ -181,11 +125,42 @@ Throw on "Lose Yourself" and make 'em lose it
 
 					<a href="https://www.pcs.agriculture.gov.ie/media/pesticides/content/products/labels/05838%20-%20Argos%20-%202021%20to%20date.pdf" target="_blank"><button>Argos</button></a>
         </div>
-        <a class = "read-more"href="pages/potato-storage.html" id="sprout-read-more"><button style="margin-top: 0px; margin-bottom: 40px; display: block; margin-left: auto; margin-right: auto; font-size: 1.4rem;">Read more about storage and sprout suppression</button></a>
+			  <div class="sprout-img show-on-mobile" style="margin-left: auto; margin-right: auto;" id="img1"></div>
         </div>
       </div>
 
 
+
+
+
+<div class="r-and-d" id="rd-index">
+			<div class="r-d-text">
+      <div>
+				<h1 style="font-size: 1.8rem;">Research  &amp  Development</h1>
+				<p>In collaboration with the potato processing industry, plant breeders across Europe and growers we are conducting varietal field trials to identify new varieties to meet the environmental, economic and sustainable needs of growers and processors.</p>
+				<ul style="margin-left: 3vh;">
+					<li>Low Carbon Footprint</li>
+					<li>High Yielding</li>
+					<li>Disease Resistance</li>
+					<li>Growing Characteristics</li>
+					<li>Storage Characteristics</li>
+					<li>Processing Quality</li>
+				</ul>
+        <a id = "r-d-button" class = "read-more"href="pages/r-and-d.html" style = "margin-top: 0; color: var(--navy); text-size: 1.4rem;"><button>Read more about research &amp development</button></a>
+			</div>
+      </div>
+      <div id="r-d-grid-container">
+			<div class="r-d-grid">
+				<div class="item-1"></div>
+				<div class="item-2"></div>
+				<div class="item-3"></div>
+				<div class="item-4"></div>
+			</div>
+				<p style="margin-top: -10px; font-size: 0.9rem;"><br>Annual Open Day where growers, breeders and processors meet and view field plots and discuss results</p>
+      </div>
+		</div>
+    <div style="display: flex; justify-content: center;">
+    </div>
     <div style="margin: 20px 25%">
     </div>
 		<h1 style="font-size: 3rem; text-align: center;" id="seed-index">Seed Services</h1>
@@ -211,7 +186,7 @@ Throw on "Lose Yourself" and make 'em lose it
 			</div>
 			<div id="seed-testing">
 				<h1 style="font-size: 1.5rem">Seed Testing</h1 style="font-size: 1.5rem">
-				<img src="img/Seed3.jpg">
+				<img src="img/Seed_Testing.jpg">
 				<p>Seed can be tested in our lab for germination or sent to Department of Agriculture laboratory for disease, germination and nematode testing</p>
 			</div>
 
@@ -220,6 +195,64 @@ Throw on "Lose Yourself" and make 'em lose it
         <a class = "read-more"href="pages/seed.html"><button style="margin-top: 0px; margin-bottom: 40px; display: block; margin-left: auto; margin-right: auto; font-size: 1.4rem;">Read more about seed</button></a>
     </div>
 
+
+
+<div id="fert-home" style="">
+<div id="fert-home-img" class="hide-on-mobile"></div>
+<div class="article" id="fert-index" style="">
+<h1>The Future of Fertilisers</h1>
+<p>Improving fertiliser efficiency is vital for sustainable food production, considering the growing
+population and environmental concerns. Haggard Stores prioritizes soil health and nutrient
+retention, promoting balanced crop nutrition and utilizing the 4R&#39;s principles. This approach
+enhances yields, profitability, and soil health while reducing the carbon footprint and
+environmental impact through innovative fertiliser strategies and sustainable agricultural
+practices like organic manures, conservation tillage, and cover crops.</p>
+<div class="cards" id="fert-cards" style="flex-basis: 100%; height: 100% !important;">
+<div><h4>P-Focus</h4>
+<p>Highly efficient liquid starter fertiliser promotes strong, early rooting with 100% protected
+phosphate, surpassing granular alternatives.</p>
+<a href="pages/concept-fert.html#p-focus"><button>Read More</button></a>
+</div>
+
+<div><h4>Efficient 28</h4>
+<p>Foliar nitrogen fertiliser, compatible with most plant protection products, ensures nearly
+100% uptake with no scorching or leaching, unlike solid fertilisers.</p>
+<a href="pages/concept-fert.html#efficient-28"><button>Read More</button></a></div>
+
+<div><h4>BLADKALI-TS</h4>
+<p>Foliar Potassium &amp; Sulphur that is crop (and soil) safe that can be applied tank-mixed
+with a spray programme</p>
+<a href="pages/concept-fert.html#bladkali"><button>Read More</button></a></div>
+
+</div>
+</div>
+<div id="fert-home-img" class="show-on-mobile"></div>
+</div>
+
+
+
+
+<div class="agronomy-home">
+<div class="agronomy-home-img hide-on-mobile" id="sustain-img"></div>
+<div class="article" id="sustain-index">
+<h1>Sustainability</h1>
+
+<ul>
+<li>Comprehensive GHG assessments tailored to your farm or business.</li>
+<li>Customized strategies to reduce carbon emissions and increase sustainability.</li>
+<li>Expert guidance on adopting renewable energy and implementing carbon offset projects.</li>
+<li>Regular monitoring and reporting to track progress and meet sustainability goals.</li>
+<li>Access to cutting-edge tools and technologies for efficient resource management.</li>
+<li>Receive dedicated support from experienced consultants committed to your success, accredited in ISO 14064 1/2/3 standards.</li>
+<li>Stay ahead of regulatory requirements and consumer demands with our GHC services.</li>
+<li>Join the movement towards a greener future while enhancing your bottom line.</li>
+
+</ul>
+</div>
+<div class="agronomy-home-img show-on-mobile" id="sustain-img"></div>
+</div>
+</div>
+</div>
 
 
 
@@ -302,9 +335,6 @@ Throw on "Lose Yourself" and make 'em lose it
 		<div class="footer-copyright">
 			<p style="font-size: 0.75rem;">Copyright &copy; Haggardstores.ie</p>
 		</div>
-
-
-
 
 
 

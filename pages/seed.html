@@ -6,6 +6,7 @@
 </head>
 <body id="home">
 <header id="myHeader" style="z-index: 999; position: fixed;">
+
 			<script>
 				window.addEventListener('scroll', function() {
 									var header = document.getElementById('myHeader');
@@ -20,36 +21,41 @@
 		<nav>
 		<ul class="sidebar">
 		<li onclick=hideSidebar()><img src="../img/more/close.svg"></li>
-		<li><a href="../index.html"style="text-decoration:none;color:white;">Home</a></li>
-		<li><a href="agronomy.html" style="text-decoration: none;color:white;">Agronomy</a></li>
-		<li><a href="potato-storage.html" style="text-decoration: none;color:white;">Potato storage</a></li>		
-		<li><a href="r-and-d.html" style="text-decoration: none;color:white;">Research &amp Development</a></li>
-		<li><a href="seed.html" style="text-decoration: none;color:white;">Seed</a></li>
-		<li><a href="concept-fert.html" style="text-decoration: none;color:white;">Concept Fertilisers</a></li>
-		<li><a href="contact-us.html" class="cta"><button>Contact</button></a></li>
+		<li onclick=hideSidebar()><a href="../index.html"style="text-decoration:none;color:white;">Home</a></li>
+		<li onclick=hideSidebar()><a href="../index.html#agronomy-index" style="text-decoration: none;color:white;">Agronomy</a></li>
+		<li onclick=hideSidebar()><a href="../index.html#potatostorage-index" style="text-decoration: none;color:white;">Potato Storage</a></li>
+		<li onclick=hideSidebar()><a href="../index.html#rd-index" style="text-decoration: none;color:white;">Research &amp Development</a></li>
+		<li onclick=hideSidebar()><a href="../index.html#seed-index" style="text-decoration: none;color:white;">Seed</a></li>
+		<li onclick=hideSidebar()><a href="../index.html#fert-index" style="text-decoration: none;color:white;">Concept Fertilisers</a></li>
+		<li onclick=hideSidebar()><a href="../index.html#sustain-index" style="text-decoration: none;color:white;">Sustainability</a></li>
+		<li onclick=hideSidebar()><a href="contact-us.html" class="cta"><button>Contact</button></a></li>
 		</ul>
 
 <ul class="links" id="">
 <li class="hide-on-mobile"><a href="../index.html"style="text-decoration:none;color:white;">Home</a></li>
-<li class="hide-on-mobile"><a href="agronomy.html" style="text-decoration: none;color:white;">Agronomy</a></li>
-<li class="hide-on-mobile"><a href="potato-storage.html" style="text-decoration: none;color:white;">Potato Storage</a></li>
-<li class="hide-on-mobile"><a href="r-and-d.html" style="text-decoration: none;color:white;">Research &<br>Development</a></li>
-<li class="hide-on-mobile"><a href="seed.html" style="text-decoration: none;color:white;">Seed</a></li>
-<li class="hide-on-mobile"><a href="concept-fert.html" style="text-decoration: none;color:white;">Concept<br>Fertilisers</a></li>
+<li class="hide-on-mobile"><a href="../index.html#agronomy-index" style="text-decoration: none;color:white;">Agronomy</a></li>
+		<li class="hide-on-mobile"><a href="../index.html#potatostorage-index" style="text-decoration: none;color:white;">Potato Storage</a></li>
+<li class="hide-on-mobile"><a href="../index.html#rd-index" style="text-decoration: none;color:white;">Research &<br>Development</a></li>
+<li class="hide-on-mobile"><a href="../index.html#seed-index" style="text-decoration: none;color:white;">Seed</a></li>
+<li class="hide-on-mobile"><a href="../index.html#fert-index" style="text-decoration: none;color:white;">Concept<br>Fertilisers</a></li>
+<li class="hide-on-mobile"><a href="../index.html#sustain-index" style="text-decoration: none;color:white;">Sustainability</a></li>
 </ul>
 </nav>
 <a href="contact-us.html" class="cta"><button class="hide-on-mobile"><strong>Contact</strong></button></a>
 <div onclick=showSidebar() class="show-on-mobile"><img src="../img/more/menu.svg"></div>
+
 </header>
 <script>
-function showSidebar() {
-	const sidebar = document.querySelector('.sidebar')
-		sidebar.style.display = 'flex'
-}
-function hideSidebar() {
-	const sidebar = document.querySelector('.sidebar')
-		sidebar.style.display = 'none'
-}
+
+			function showSidebar() {
+							const sidebar = document.querySelector('.sidebar')
+							sidebar.classList.toggle('slide') 
+						}
+			function hideSidebar() {
+							const sidebar = document.querySelector('.sidebar')
+							sidebar.classList.toggle('slide') 
+						}
+		
 </script>
 
 
@@ -61,12 +67,12 @@ function hideSidebar() {
 			<p>Seeds sales and advice on varieties are available from all Haggard Stores agronomists. Through a network of suppliers,Goldcrop, Seedtech and Germinal Seeds, the company is able to supply a complete range of seeds for all arable combinable crops and many others including energy and fodder crops, maize, environmental mixes and grassland.
 
 			Our fleet of high output mobile seed processing units and highly skilled operators clean and dress farm saved seed using state of the art gravity selection leave you with an extremely high quality sample ready for sowing.
-			All of our mobile seed cleaners are equipped with the very best seed treatment units which are supplied and maintained by the world’s leading crop protection specialists; Basf. This ensures your farm saved seed is coated evenly and accurately with the very best products available.
+			All of our mobile seed cleaners are equipped with the very best seed treatment units which are supplied and maintained by the world's leading crop protection specialists; Basf. This ensures your farm saved seed is coated evenly and accurately with the very best products available.
 			Our mobile seed cleaner operators are experienced and skilled in what they do and trained to process your farm saved seeds as quickly and accurately as possible and leave behind them clean and tidy yards. We take great pride in the service we are able to offer and value the loyal customer base we have been able to build up through years of providing quality seed processing and seed dressing services.
-			Our mobile seed processing support vehicles are normally also carrying additional products such as sampling and measurement equipment, temperature spears, moisture meters etc. If there is something you need for your farm, let us know and we’ll ask our mobile seed cleaner operators to bring it with them.
+			Our mobile seed processing support vehicles are normally also carrying additional products such as sampling and measurement equipment, temperature spears, moisture meters etc. If there is something you need for your farm, let us know and we'll ask our mobile seed cleaner operators to bring it with them.
 			Mobile seed processing should be a simple process that involves good initial communication between farmer and processor to ensure that the whole operation passes as seamlessly as possible. This is the standard every time an Haggard Seeds mobile seed processing unit arrives on a farm.</p>
 
-	<div class="cards">
+	<div class="cards" id="article-cards">
 		<div><h4>Bulk Cleaning Service</h4>
 			<p>Simple solution to improve crop quality and exceed expectations of your customers</p>
 			<a href="#cleaning"><button>Read More</button></a>

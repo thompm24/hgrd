@@ -7,6 +7,8 @@
 </head>
 <body id="home">
 <header id="myHeader" style="z-index: 999; position: fixed;">
+
+
 			<script>
 				window.addEventListener('scroll', function() {
 									var header = document.getElementById('myHeader');
@@ -21,37 +23,41 @@
 		<nav>
 		<ul class="sidebar">
 		<li onclick=hideSidebar()><img src="../img/more/close.svg"></li>
-		<li><a href="../index.html"style="text-decoration:none;color:white;">Home</a></li>
-		<li><a href="agronomy.html" style="text-decoration: none;color:white;">Agronomy</a></li>
-				<li><a href="potato-storage.html" style="text-decoration: none;color:white;">Potato Storage</a></li>
-		<li><a href="r-and-d.html" style="text-decoration: none;color:white;">Research &amp Development</a></li>
-		<li><a href="seed.html" style="text-decoration: none;color:white;">Seed</a></li>
-		<li><a href="concept-fert.html" style="text-decoration: none;color:white;">Concept Fertilisers</a></li>
-		<li><a href="contact-us.html" class="cta"><button>Contact</button></a></li>
+		<li onclick=hideSidebar()><a href="../index.html"style="text-decoration:none;color:white;">Home</a></li>
+		<li onclick=hideSidebar()><a href="../index.html#agronomy-index" style="text-decoration: none;color:white;">Agronomy</a></li>
+		<li onclick=hideSidebar()><a href="../index.html#potatostorage-index" style="text-decoration: none;color:white;">Potato Storage</a></li>
+		<li onclick=hideSidebar()><a href="../index.html#rd-index" style="text-decoration: none;color:white;">Research &amp Development</a></li>
+		<li onclick=hideSidebar()><a href="../index.html#seed-index" style="text-decoration: none;color:white;">Seed</a></li>
+		<li onclick=hideSidebar()><a href="../index.html#fert-index" style="text-decoration: none;color:white;">Concept Fertilisers</a></li>
+		<li onclick=hideSidebar()><a href="../index.html#sustain-index" style="text-decoration: none;color:white;">Sustainability</a></li>
+		<li onclick=hideSidebar()><a href="contact-us.html" class="cta"><button>Contact</button></a></li>
 		</ul>
 
 <ul class="links" id="">
 <li class="hide-on-mobile"><a href="../index.html"style="text-decoration:none;color:white;">Home</a></li>
-<li class="hide-on-mobile"><a href="agronomy.html" style="text-decoration: none;color:white;">Agronomy</a></li>
-		<li class="hide-on-mobile"><a href="potato-storage.html" style="text-decoration: none;color:white;">Potato Storage</a></li>
-<li class="hide-on-mobile"><a href="r-and-d.html" style="text-decoration: none;color:white;">Research &<br>Development</a></li>
-<li class="hide-on-mobile"><a href="seed.html" style="text-decoration: none;color:white;">Seed</a></li>
-<li class="hide-on-mobile"><a href="concept-fert.html" style="text-decoration: none;color:white;">Concept<br>Fertilisers</a></li>
+<li class="hide-on-mobile"><a href="../index.html#agronomy-index" style="text-decoration: none;color:white;">Agronomy</a></li>
+		<li class="hide-on-mobile"><a href="../index.html#potatostorage-index" style="text-decoration: none;color:white;">Potato Storage</a></li>
+<li class="hide-on-mobile"><a href="../index.html#rd-index" style="text-decoration: none;color:white;">Research &<br>Development</a></li>
+<li class="hide-on-mobile"><a href="../index.html#seed-index" style="text-decoration: none;color:white;">Seed</a></li>
+<li class="hide-on-mobile"><a href="../index.html#fert-index" style="text-decoration: none;color:white;">Concept<br>Fertilisers</a></li>
+<li class="hide-on-mobile"><a href="../index.html#sustain-index" style="text-decoration: none;color:white;">Sustainability</a></li>
 </ul>
 </nav>
 <a href="contact-us.html" class="cta"><button class="hide-on-mobile"><strong>Contact</strong></button></a>
 <div onclick=showSidebar() class="show-on-mobile"><img src="../img/more/menu.svg"></div>
+
 </header>
 <script>
-function showSidebar() {
-	const sidebar = document.querySelector('.sidebar')
-		sidebar.style.display = 'flex'
-}
-function hideSidebar() {
-	const sidebar = document.querySelector('.sidebar')
-		sidebar.style.display = 'none'
-}
-</script>
+
+			function showSidebar() {
+							const sidebar = document.querySelector('.sidebar')
+							sidebar.classList.toggle('slide') 
+						}
+			function hideSidebar() {
+							const sidebar = document.querySelector('.sidebar')
+							sidebar.classList.toggle('slide') 
+						}
+		</script>
 
 
 
@@ -81,11 +87,11 @@ and sustainable needs of growers and processors.</p>
 <p>Annual Open Day where growers, breeders and processers meet and view field plots and discuss
 results.</br></br>
 
-Over the years, our dedicated growers have encountered evolving challenges, including rising production costs, heightened restrictions on fertilizer usage, and the continuous reduction of available chemical options in potato cultivation. The imperative for varieties with a minimal carbon footprint is particularly pronounced in the potato sector, where the landscape is becoming increasingly demanding annually.<br>
+Over the years, our dedicated growers have encountered evolving challenges, including rising production costs, heightened restrictions on fertiliser usage, and the continuous reduction of available chemical options in potato cultivation. The imperative for varieties with a minimal carbon footprint is particularly pronounced in the potato sector, where the landscape is becoming increasingly demanding annually.<br>
 </br>
 In response to these challenges, we made a strategic decision to seek out and develop new potato varieties that not only excel under these criteria but also align with the specific requirements of Crisping Processors and Fresh Chip needs. To ensure the suitability of the varieties at different stages in storage and throughout the calendar year, we actively engaged Crisping Processors in the evaluation process.<br>
 </br>
-In 2021, we proactively reached out to various potato breeders across Europe to identify new potato varieties that are well-suited to Irish growing conditions. Our criteria included performance with reduced fertilizer inputs, adaptability to the changing landscape of plant protection products, and the ability to meet processing specifications from field to store, ensuring excellent cooking quality through July of the following year.<br>
+In 2021, we proactively reached out to various potato breeders across Europe to identify new potato varieties that are well-suited to Irish growing conditions. Our criteria included performance with reduced fertiliser inputs, adaptability to the changing landscape of plant protection products, and the ability to meet processing specifications from field to store, ensuring excellent cooking quality through July of the following year.<br>
 </br>
 In 2022, we executed our comprehensive plan by planting 28 distinct crisping varieties in 4m x 50m plots, adhering to current farming restrictions. Prior to harvesting, an annual open day event is organized in August, where we extend invitations to all Irish potato growers to observe the growing plots. This event serves as a platform for engaging with representatives from various potato breeders, facilitating discussions on a range of topics related to their varieties, spanning from growing conditions to harvesting and storage attributes.<br>
 </br>

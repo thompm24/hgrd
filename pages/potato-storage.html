@@ -5,7 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 	</head>
 	<body id="home">
-		<header id="myHeader" style="z-index: 999; position: fixed;">
+<header id="myHeader" style="z-index: 999; position: fixed;">
+
 			<script>
 				window.addEventListener('scroll', function() {
 									var header = document.getElementById('myHeader');
@@ -16,40 +17,43 @@
 																	}
 								});
 			</script>
-			<img id = "logoImg" src="../img/more/logo_small.png" alt="Haggard Stores">
-			<nav>
-				<ul class="sidebar">
-					<li onclick=hideSidebar()><img src="../img/more/close.svg"></li>
-					<li><a href="../index.html"style="text-decoration:none;color:white;">Home</a></li>
-					<li><a href="agronomy.html" style="text-decoration: none;color:white;">Agronomy</a></li>
-					<li><a href="potato-storage.html" style="text-decoration: none;color:white;">Potato Storage</a></li>
-					<li><a href="r-and-d.html" style="text-decoration: none;color:white;">Research &amp Development</a></li>
-					<li><a href="seed.html" style="text-decoration: none;color:white;">Seed</a></li>
+		<img id = "logoImg" src="../img/more/logo_small.png" alt="Haggard Stores">
+		<nav>
+		<ul class="sidebar">
+		<li onclick=hideSidebar()><img src="../img/more/close.svg"></li>
+		<li onclick=hideSidebar()><a href="../index.html"style="text-decoration:none;color:white;">Home</a></li>
+		<li onclick=hideSidebar()><a href="../index.html#agronomy-index" style="text-decoration: none;color:white;">Agronomy</a></li>
+		<li onclick=hideSidebar()><a href="../index.html#potatostorage-index" style="text-decoration: none;color:white;">Potato Storage</a></li>
+		<li onclick=hideSidebar()><a href="../index.html#rd-index" style="text-decoration: none;color:white;">Research &amp Development</a></li>
+		<li onclick=hideSidebar()><a href="../index.html#seed-index" style="text-decoration: none;color:white;">Seed</a></li>
+		<li onclick=hideSidebar()><a href="../index.html#fert-index" style="text-decoration: none;color:white;">Concept Fertilisers</a></li>
+		<li onclick=hideSidebar()><a href="../index.html#sustain-index" style="text-decoration: none;color:white;">Sustainability</a></li>
+		<li onclick=hideSidebar()><a href="contact-us.html" class="cta"><button>Contact</button></a></li>
+		</ul>
 
-					<li><a href="concept-fert.html" style="text-decoration: none;color:white;">Concept Fertilisers</a></li>
-					<li><a href="contact-us.html" class="cta"><button>Contact</button></a></li>
-				</ul>
+<ul class="links" id="">
+<li class="hide-on-mobile"><a href="../index.html"style="text-decoration:none;color:white;">Home</a></li>
+<li class="hide-on-mobile"><a href="../index.html#agronomy-index" style="text-decoration: none;color:white;">Agronomy</a></li>
+		<li class="hide-on-mobile"><a href="../index.html#potatostorage-index" style="text-decoration: none;color:white;">Potato Storage</a></li>
+<li class="hide-on-mobile"><a href="../index.html#rd-index" style="text-decoration: none;color:white;">Research &<br>Development</a></li>
+<li class="hide-on-mobile"><a href="../index.html#seed-index" style="text-decoration: none;color:white;">Seed</a></li>
+<li class="hide-on-mobile"><a href="../index.html#fert-index" style="text-decoration: none;color:white;">Concept<br>Fertilisers</a></li>
+<li class="hide-on-mobile"><a href="../index.html#sustain-index" style="text-decoration: none;color:white;">Sustainability</a></li>
+</ul>
+</nav>
+<a href="contact-us.html" class="cta"><button class="hide-on-mobile"><strong>Contact</strong></button></a>
+<div onclick=showSidebar() class="show-on-mobile"><img src="../img/more/menu.svg"></div>
 
-				<ul class="links" id="">
-					<li class="hide-on-mobile"><a href="../index.html"style="text-decoration:none;color:white;">Home</a></li>
-					<li class="hide-on-mobile"><a href="agronomy.html" style="text-decoration: none;color:white;">Agronomy</a></li>
-					<li class="hide-on-mobile"><a href="potato-storage.html" style="text-decoration: none;color:white;">Potato Storage</a></li>
-					<li class="hide-on-mobile"><a href="r-and-d.html" style="text-decoration: none;color:white;">Research &<br>Development</a></li>
-					<li class="hide-on-mobile"><a href="seed.html" style="text-decoration: none;color:white;">Seed</a></li>
-					<li class="hide-on-mobile"><a href="concept-fert.html" style="text-decoration: none;color:white;">Concept<br>Fertilisers</a></li>
-				</ul>
-			</nav>
-			<a href="contact-us.html" class="cta"><button class="hide-on-mobile"><strong>Contact</strong></button></a>
-			<div onclick=showSidebar() class="show-on-mobile"><img src="../img/more/menu.svg"></div>
-		</header>
-		<script>
+</header>
+
+<script>
 			function showSidebar() {
 							const sidebar = document.querySelector('.sidebar')
-							sidebar.style.display = 'flex'
+							sidebar.classList.toggle('slide') 
 						}
 			function hideSidebar() {
 							const sidebar = document.querySelector('.sidebar')
-							sidebar.style.display = 'none'
+							sidebar.classList.toggle('slide') 
 						}
 		</script>
 
@@ -86,36 +90,31 @@
 			</p>			
 
 
-		<div class="sprout-suppression-grid">
-			<div class="item-1-ss"></div>
-		</div>
-		<div class="sprout-suppression-text" style="margin: 0px;">
-			<div style="display: flex;">
-				<div style="width: 100%; flex-basis: 100%; display: flex; flex-direction: column; justify-content: center; align-content: center;">
-					<h1>Sprout Suppression</h1>
-					<ul style="list-style: none; margin: 0px 0px;">
+        <div style="width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <div class="sprout-text" style="background: rgba(0, 0, 0, 0); box-shadow: none; margin: 5px;">
+          <h1>Sprout Suppression</h1>
+					<ul>
 						<li>Protecting &amp Preserving your harvest.</li>
 						<li>Professional Fogging Service, using Synofog &amp Xedafog electrical foggers with accredited operators.</li>
 						<li>Store Inspection precedes all applications ensuring best performance.</li>
 						<li>There are three sprout suppressant products available to us.</li>
 					</ul>
-					<div class="cards" style="justify-content: space-between; padding: 0; margin: 40px; margin-right: 60px;">
-						<a style="width: 25%;" href="https://www.pcs.agriculture.gov.ie/media/pesticides/content/products/labels/06256%20-%201,4%20SIGHT%20-%202023%20to%20date.pdf" target="_blank" ><button>1,4Sight</button></a>
+        <div class="sprout-buttons">
+					<a  href="https://www.pcs.agriculture.gov.ie/media/pesticides/content/products/labels/06256%20-%201,4%20SIGHT%20-%202023%20to%20date.pdf" target="_blank" ><button>1,4Sight</button></a>
 
-						<a style="width: 25%;" href="https://www.pcs.agriculture.gov.ie/media/pesticides/content/products/labels/05431%20-%20Biox-M%20-%202016%20to%20date.pdf" target="_blank"><button>Biox M</button></a>
+					<a  href="https://www.pcs.agriculture.gov.ie/media/pesticides/content/products/labels/05431%20-%20Biox-M%20-%202016%20to%20date.pdf" target="_blank"><button fontsize: auto;>Biox M</button></a>
 
-						<a style="width: 25%;" href="https://www.pcs.agriculture.gov.ie/media/pesticides/content/products/labels/05838%20-%20Argos%20-%202021%20to%20date.pdf" target="_blank"><button>Argos</button></a>
-						</li></ul>
-					</div>
-				</div>
-				<div style="flex-basis: 100%;">
-					<img src="../img/Potato_Storage_1.jpeg" style="width: 96%; margin: 2%;">
-				</div>
-			</div>
-		</div>
+					<a href="https://www.pcs.agriculture.gov.ie/media/pesticides/content/products/labels/05838%20-%20Argos%20-%202021%20to%20date.pdf" target="_blank"><button>Argos</button></a>
+        </div>
+        </div>
+
+			  <img src="../img/Potato_Storage_1.jpeg" style="width: 80%;">
+
+</div>
 
 
-		</div>
+</div>
+
 
 		<div class="footer-container">
 			<div class="footer-location">

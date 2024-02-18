@@ -20,36 +20,40 @@
 		<nav>
 		<ul class="sidebar">
 		<li onclick=hideSidebar()><img src="../img/more/close.svg"></li>
-		<li><a href="../index.html"style="text-decoration:none;color:white;">Home</a></li>
-		<li><a href="agronomy.html" style="text-decoration: none;color:white;">Agronomy</a></li>
-				<li><a href="potato-storage.html" style="text-decoration: none;color:white;">Potato Storage</a></li>
-		<li><a href="r-and-d.html" style="text-decoration: none;color:white;">Research &amp Development</a></li>
-		<li><a href="seed.html" style="text-decoration: none;color:white;">Seed</a></li>
-		<li><a href="concept-fert.html" style="text-decoration: none;color:white;">Concept Fertilisers</a></li>
-		<li><a href="contact-us.html" class="cta"><button>Contact</button></a></li>
+		<li onlick=hideSidebar()><a href="../index.html"style="text-decoration:none;color:white;">Home</a></li>
+		<li onlick=hideSidebar()><a href="../index.html#agronomy-index" style="text-decoration: none;color:white;">Agronomy</a></li>
+		<li onclick=hideSidebar()><a href="../index.html#potatostorage-index" style="text-decoration: none;color:white;">Potato Storage</a></li>
+		<li onlick=hideSidebar()><a href="../index.html#rd-index" style="text-decoration: none;color:white;">Research &amp Development</a></li>
+		<li onlick=hideSidebar()><a href="../index.html#seed-index" style="text-decoration: none;color:white;">Seed</a></li>
+		<li onlick=hideSidebar()><a href="../index.html#fert-index" style="text-decoration: none;color:white;">Concept Fertilisers</a></li>
+		<li onlick=hideSidebar()><a href="../index.html#sustain-index" style="text-decoration: none;color:white;">Sustainability</a></li>
+		<li onlick=hideSidebar()><a href="contact-us.html" class="cta"><button>Contact</button></a></li>
 		</ul>
 
 <ul class="links" id="">
 <li class="hide-on-mobile"><a href="../index.html"style="text-decoration:none;color:white;">Home</a></li>
-<li class="hide-on-mobile"><a href="agronomy.html" style="text-decoration: none;color:white;">Agronomy</a></li>
-		<li class="hide-on-mobile"><a href="potato-storage.html" style="text-decoration: none;color:white;">Potato Storage</a></li>
-<li class="hide-on-mobile"><a href="r-and-d.html" style="text-decoration: none;color:white;">Research &<br>Development</a></li>
-<li class="hide-on-mobile"><a href="seed.html" style="text-decoration: none;color:white;">Seed</a></li>
-<li class="hide-on-mobile"><a href="concept-fert.html" style="text-decoration: none;color:white;">Concept<br>Fertilisers</a></li>
+<li class="hide-on-mobile"><a href="../index.html#agronomy-index" style="text-decoration: none;color:white;">Agronomy</a></li>
+		<li class="hide-on-mobile"><a href="../index.html#potatostorage-index" style="text-decoration: none;color:white;">Potato Storage</a></li>
+<li class="hide-on-mobile"><a href="../index.html#rd-index" style="text-decoration: none;color:white;">Research &<br>Development</a></li>
+<li class="hide-on-mobile"><a href="../index.html#seed-index" style="text-decoration: none;color:white;">Seed</a></li>
+<li class="hide-on-mobile"><a href="../index.html#fert-index" style="text-decoration: none;color:white;">Concept<br>Fertilisers</a></li>
+<li class="hide-on-mobile"><a href="../index.html#sustain-index" style="text-decoration: none;color:white;">Sustainability</a></li>
 </ul>
 </nav>
 <a href="contact-us.html" class="cta"><button class="hide-on-mobile"><strong>Contact</strong></button></a>
 <div onclick=showSidebar() class="show-on-mobile"><img src="../img/more/menu.svg"></div>
 </header>
 <script>
-function showSidebar() {
-	const sidebar = document.querySelector('.sidebar')
-		sidebar.style.display = 'flex'
-}
-function hideSidebar() {
-	const sidebar = document.querySelector('.sidebar')
-		sidebar.style.display = 'none'
-}
+
+			function showSidebar() {
+							const sidebar = document.querySelector('.sidebar')
+							sidebar.classList.toggle('slide') 
+						}
+			function hideSidebar() {
+							const sidebar = document.querySelector('.sidebar')
+							sidebar.classList.toggle('slide') 
+						}
+		
 </script>
 
 
@@ -61,7 +65,7 @@ function hideSidebar() {
 <h1>Our Dedication</h1>
 <p>The agronomy team at HS are industry professionals of the highest calibre and are constantly undergoing professional development and training to ensure that they are providing the best advice for your business.<br>Adaptive management has the potential to rapidly accelerate improvements in nutrient management through the documentation of the most efficient management practices by farmers working with extension educators, consultants, scientists and environmental groups</p>
 
-	<div class="cards">
+	<div class="cards" id="article-cards">
 		<div><h4>Adaptive Agronomy</h4>
 			<p>Agronomy that is adaptive</p>
 			<a href="#adaptive"><button>Read More</button></a>
@@ -91,13 +95,13 @@ function hideSidebar() {
 </div>
 <div>
 <h5>Plant Nutrition</h5>
-<p>We understand the unique nutritional requirements of each crop and tailor a specialized nutrition program to meet those needs. Our independent Agronomists offer advice on all aspects of nutrition and crop establishment, ensuring you receive unbiased recommendations. Free from ties to fertilizer manufacturers, we provide comprehensive guidance to help maximize yields and safeguard margins.</p>
+<p>We understand the unique nutritional requirements of each crop and tailor a specialized nutrition program to meet those needs. Our independent Agronomists offer advice on all aspects of nutrition and crop establishment, ensuring you receive unbiased recommendations. Free from ties to fertiliser manufacturers, we provide comprehensive guidance to help maximize yields and safeguard margins.</p>
 </div>
 </div>
 <img src="../img/Agronomy.jpeg" style="width: 80%; margin-left: 10%; margin-right: 10%;">
 
 <h1 id="precison">Precision Farming</h1>
-<p>Used effectively, precision farming technology&mdash;encompassing yield mapping, automatic steering, and variable rate application&mdash;significantly enhances farm operation efficiency. The accurate application of fertilizers, both in terms of quantity and timing, plays a pivotal role in influencing yield, protein content, cost-effectiveness, and environmental impact.
+<p>Used effectively, precision farming technology&mdash;encompassing yield mapping, automatic steering, and variable rate application&mdash;significantly enhances farm operation efficiency. The accurate application of fertilisers, both in terms of quantity and timing, plays a pivotal role in influencing yield, protein content, cost-effectiveness, and environmental impact.
 
 Our collaboration with top precision farming application specialists positions Haggard Stores as a comprehensive 'one-stop' solution for the modern farmer. By leveraging these cutting-edge tools, farmers can fine-tune fertilization to meet the precise needs of plants at every point in the field, optimizing outcomes and sustainability.</p>
 <ul style="margin-left: 3vh; list-style: none;">
