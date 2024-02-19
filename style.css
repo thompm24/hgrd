@@ -1469,3 +1469,16 @@ footer{
   }
 }
 
+@media only screen and (min-width: 950px) {
+	.banner{
+	height: 200px;
+	background-image: url('img/DesktopBanner-1200wide.png');
+	background-size: cover;
+  width: 100%;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	font-family: 'Roboto', sans-serif;
+}
+}
