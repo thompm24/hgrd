@@ -521,7 +521,7 @@ button:hover {
 
 .banner{
 	height: 200px;
-	background-image: url('img/banner_desktop.jpeg');
+	background-image: url('img/DesktopBanner-3200wide.png');
 	background-size: cover;
   width: 100%;
   background-position: center;
@@ -912,7 +912,7 @@ width: auto; flex-grow: 1; padding: 0px 80px;
   
    .banner {
      height: 200px;
-     background-image: url(img/banner_mobile.JPG);
+     background-image: url(img/banner-505width.png);
    } 
 
    .banner h1 {
@@ -1169,7 +1169,17 @@ width: auto; flex-grow: 1; padding: 0px 80px;
   .r-and-d {
     flex-direction: column;
   }
-	
+	.banner{
+	height: 200px;
+	background-image: url('img/DesktopBanner-1200wide.png');
+	background-size: cover;
+  width: 100%;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	font-family: 'Roboto', sans-serif;
+}
 }
 
 
@@ -1369,7 +1379,17 @@ footer{
 .sprout {
   margin: 15px 0;
 }
-
+.banner{
+	height: 200px;
+	background-image: url('img/DesktopBanner-1200wide.png');
+	background-size: cover;
+  width: 100%;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	font-family: 'Roboto', sans-serif;
+}
 }
 
 @media only screen and (max-width: 1100px) {
@@ -1400,6 +1420,19 @@ footer{
   #potato-storage > div {
     min-height: 350px;
   }
+  
+  .banner{
+	height: 200px;
+	background-image: url('img/DesktopBanner-1200wide.png');
+	background-size: cover;
+  width: 100%;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	font-family: 'Roboto', sans-serif;
+}
+  
 }
 
 @media only screen and (max-width: 650px) {
