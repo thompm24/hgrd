@@ -453,8 +453,8 @@ button:hover {
 }
 
 .seed {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-around;
   margin-bottom: 5px;
 }
 
@@ -463,7 +463,7 @@ button:hover {
 }
 
 .seed > div {
-	grid-column: span 1;
+  flex-basis: 100%;
 	background: var(--beige);
 	padding: 20px;
 	margin: 20px;
@@ -945,8 +945,7 @@ width: auto; flex-grow: 1; padding: 0px 80px;
 	}
 
 	.seed {
-		grid-template-columns: 1fr;
-		grid-template-rows: auto auto auto;
+    flex-direction: column;
 	}
 
 	.seed > div{
