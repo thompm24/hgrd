@@ -1456,6 +1456,7 @@ footer{
   }
   #psbanner {
 	background-image: url('img/Potato_Storage_2048.png');
+	min-height: 250px;
 }
 }
 
