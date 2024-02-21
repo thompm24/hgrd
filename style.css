@@ -537,7 +537,7 @@ button:hover {
 }
 
 #psbanner {
-	background-image: url('img/Potato_Storage.jpeg');
+	background-image: url('img/Potato_Storage_2048.png');
 }
 
 .article #r-and-d {
@@ -1432,7 +1432,10 @@ footer{
   align-items: center;
 	font-family: 'Roboto', sans-serif;
 }
-  
+ #psbanner {
+	background-image: url('img/Potato_Storage_1200.png');
+	
+} 
 }
 
 @media only screen and (max-width: 650px) {
@@ -1440,6 +1443,9 @@ footer{
      min-width: 300px;
      width: 50%;
    }
+   #psbanner {
+	background-image: url('img/Potato_Storage_800.png');
+}
 }
 
 
@@ -1448,14 +1454,20 @@ footer{
     width: 100%;
     height: fit-content;
   }
+  #psbanner {
+	background-image: url('img/Potato_Storage_2048.png');
+}
 }
 
 
 @media only screen and (min-width: 1350px) {
   .sprout {
     margin: 5px
+	
   }
-
+#psbanner {
+	background-image: url('img/Potato_Storage_1200.png');
+}
 }
 
 @media only screen and (min-width: 1450px) {
@@ -1467,6 +1479,9 @@ footer{
   .sprout {
     margin: 5px;
   }
+  #psbanner {
+	background-image: url('img/Potato_Storage_2048.png');
+}
 }
 
 @media only screen and (min-width: 950px) {
@@ -1480,5 +1495,9 @@ footer{
   justify-content: center;
   align-items: center;
 	font-family: 'Roboto', sans-serif;
+}
+#psbanner {
+	background-image: url('img/Potato_Storage_800.png');
+	min-height: 300px;
 }
 }
